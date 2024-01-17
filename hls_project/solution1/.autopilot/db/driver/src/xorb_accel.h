@@ -1,0 +1,114 @@
+// ==============================================================
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// ==============================================================
+#ifndef XORB_ACCEL_H
+#define XORB_ACCEL_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/***************************** Include Files *********************************/
+#ifndef __linux__
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xstatus.h"
+#include "xil_io.h"
+#else
+#include <stdint.h>
+#include <assert.h>
+#include <dirent.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/mman.h>
+#include <unistd.h>
+#include <stddef.h>
+#endif
+#include "xorb_accel_hw.h"
+
+/**************************** Type Definitions ******************************/
+#ifdef __linux__
+typedef uint8_t u8;
+typedef uint16_t u16;
+typedef uint32_t u32;
+typedef uint64_t u64;
+#else
+typedef struct {
+    u16 DeviceId;
+    u32 Control_BaseAddress;
+} XOrb_accel_Config;
+#endif
+
+typedef struct {
+    u64 Control_BaseAddress;
+    u32 IsReady;
+} XOrb_accel;
+
+typedef u32 word_type;
+
+/***************** Macros (Inline Functions) Definitions *********************/
+#ifndef __linux__
+#define XOrb_accel_WriteReg(BaseAddress, RegOffset, Data) \
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+#define XOrb_accel_ReadReg(BaseAddress, RegOffset) \
+    Xil_In32((BaseAddress) + (RegOffset))
+#else
+#define XOrb_accel_WriteReg(BaseAddress, RegOffset, Data) \
+    *(volatile u32*)((BaseAddress) + (RegOffset)) = (u32)(Data)
+#define XOrb_accel_ReadReg(BaseAddress, RegOffset) \
+    *(volatile u32*)((BaseAddress) + (RegOffset))
+
+#define Xil_AssertVoid(expr)    assert(expr)
+#define Xil_AssertNonvoid(expr) assert(expr)
+
+#define XST_SUCCESS             0
+#define XST_DEVICE_NOT_FOUND    2
+#define XST_OPEN_DEVICE_FAILED  3
+#define XIL_COMPONENT_IS_READY  1
+#endif
+
+/************************** Function Prototypes *****************************/
+#ifndef __linux__
+int XOrb_accel_Initialize(XOrb_accel *InstancePtr, u16 DeviceId);
+XOrb_accel_Config* XOrb_accel_LookupConfig(u16 DeviceId);
+int XOrb_accel_CfgInitialize(XOrb_accel *InstancePtr, XOrb_accel_Config *ConfigPtr);
+#else
+int XOrb_accel_Initialize(XOrb_accel *InstancePtr, const char* InstanceName);
+int XOrb_accel_Release(XOrb_accel *InstancePtr);
+#endif
+
+void XOrb_accel_Start(XOrb_accel *InstancePtr);
+u32 XOrb_accel_IsDone(XOrb_accel *InstancePtr);
+u32 XOrb_accel_IsIdle(XOrb_accel *InstancePtr);
+u32 XOrb_accel_IsReady(XOrb_accel *InstancePtr);
+void XOrb_accel_EnableAutoRestart(XOrb_accel *InstancePtr);
+void XOrb_accel_DisableAutoRestart(XOrb_accel *InstancePtr);
+u32 XOrb_accel_Get_return(XOrb_accel *InstancePtr);
+
+void XOrb_accel_Set_height(XOrb_accel *InstancePtr, u32 Data);
+u32 XOrb_accel_Get_height(XOrb_accel *InstancePtr);
+void XOrb_accel_Set_width(XOrb_accel *InstancePtr, u32 Data);
+u32 XOrb_accel_Get_width(XOrb_accel *InstancePtr);
+void XOrb_accel_Set_height_new(XOrb_accel *InstancePtr, u32 Data);
+u32 XOrb_accel_Get_height_new(XOrb_accel *InstancePtr);
+void XOrb_accel_Set_width_new(XOrb_accel *InstancePtr, u32 Data);
+u32 XOrb_accel_Get_width_new(XOrb_accel *InstancePtr);
+void XOrb_accel_Set_threshold(XOrb_accel *InstancePtr, u32 Data);
+u32 XOrb_accel_Get_threshold(XOrb_accel *InstancePtr);
+
+void XOrb_accel_InterruptGlobalEnable(XOrb_accel *InstancePtr);
+void XOrb_accel_InterruptGlobalDisable(XOrb_accel *InstancePtr);
+void XOrb_accel_InterruptEnable(XOrb_accel *InstancePtr, u32 Mask);
+void XOrb_accel_InterruptDisable(XOrb_accel *InstancePtr, u32 Mask);
+void XOrb_accel_InterruptClear(XOrb_accel *InstancePtr, u32 Mask);
+u32 XOrb_accel_InterruptGetEnabled(XOrb_accel *InstancePtr);
+u32 XOrb_accel_InterruptGetStatus(XOrb_accel *InstancePtr);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

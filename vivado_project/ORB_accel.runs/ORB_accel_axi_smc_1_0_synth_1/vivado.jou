@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 17 17:12:07 2024
+# Process ID: 3868
+# Current directory: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/vivado_project/ORB_accel.runs/ORB_accel_axi_smc_1_0_synth_1
+# Command line: vivado.exe -log ORB_accel_axi_smc_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ORB_accel_axi_smc_1_0.tcl
+# Log file: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/vivado_project/ORB_accel.runs/ORB_accel_axi_smc_1_0_synth_1/ORB_accel_axi_smc_1_0.vds
+# Journal file: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/vivado_project/ORB_accel.runs/ORB_accel_axi_smc_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ORB_accel_axi_smc_1_0.tcl -notrace

@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vitis HLS Report for 'process_ORB_8_0_1080_1920_1_s'
+================================================================
+* Date:           Wed Jan 17 16:59:42 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.274 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------+-----------------------------------------------+---------+---------+----------+-----------+-----+---------+---------+
+        |                                                  |                                               |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+        |                     Instance                     |                     Module                    |   min   |   max   |    min   |    max    | min |   max   |   Type  |
+        +--------------------------------------------------+-----------------------------------------------+---------+---------+----------+-----------+-----+---------+---------+
+        |process_rBRIEF_8_1080_1920_U0                     |process_rBRIEF_8_1080_1920_s                   |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_blur_8_0_1080_1920_1_U0                   |process_blur_8_0_1080_1920_1_s                 |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_fast_8_1080_1920_1_U0                     |process_fast_8_1080_1920_1_s                   |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_resize_8_0_1080_1920_1_U0                 |process_resize_8_0_1080_1920_1_s               |      106|  2089421|  1.060 us|  20.894 ms|  106|  2089421|     none|
+        |process_nms_8_1080_1920_1_U0                      |process_nms_8_1080_1920_1_s                    |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_output_8_0_1080_1920_1_U0                 |process_output_8_0_1080_1920_1_s               |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_input_8_0_1080_1920_1_U0                  |process_input_8_0_1080_1920_1_s                |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_stream2xfMat_8_0_1080_1920_1_U0           |process_stream2xfMat_8_0_1080_1920_1_s         |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_xfMat2stream_8_0_1080_1920_1_U0           |process_xfMat2stream_8_0_1080_1920_1_s         |        ?|        ?|         ?|          ?|    ?|        ?|     none|
+        |process_ORB_8_0_1080_1920_1_entry57_U0            |process_ORB_8_0_1080_1920_1_entry57            |        0|        0|      0 ns|       0 ns|    0|        0|     none|
+        |process_ORB_8_0_1080_1920_1_Block_split1_proc_U0  |process_ORB_8_0_1080_1920_1_Block_split1_proc  |        0|        0|      0 ns|       0 ns|    0|        0|     none|
+        +--------------------------------------------------+-----------------------------------------------+---------+---------+----------+-----------+-----+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      16|    -|
+|FIFO             |       20|     -|    3884|    2384|    -|
+|Instance         |      139|    33|   45801|   38899|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      18|    -|
+|Register         |        -|     -|       2|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |      159|    33|   49687|   41317|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       25|     1|      10|      17|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+-----------------------------------------------+---------+----+-------+-------+-----+
+    |                     Instance                     |                     Module                    | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +--------------------------------------------------+-----------------------------------------------+---------+----+-------+-------+-----+
+    |process_ORB_8_0_1080_1920_1_Block_split1_proc_U0  |process_ORB_8_0_1080_1920_1_Block_split1_proc  |        0|   0|      3|    110|    0|
+    |process_ORB_8_0_1080_1920_1_entry57_U0            |process_ORB_8_0_1080_1920_1_entry57            |        0|   0|      3|     83|    0|
+    |process_blur_8_0_1080_1920_1_U0                   |process_blur_8_0_1080_1920_1_s                 |        6|  11|   4472|   7150|    0|
+    |process_fast_8_1080_1920_1_U0                     |process_fast_8_1080_1920_1_s                   |        6|   0|   3091|   5016|    0|
+    |process_input_8_0_1080_1920_1_U0                  |process_input_8_0_1080_1920_1_s                |        0|   1|     62|    161|    0|
+    |process_nms_8_1080_1920_1_U0                      |process_nms_8_1080_1920_1_s                    |        2|   0|    254|    645|    0|
+    |process_output_8_0_1080_1920_1_U0                 |process_output_8_0_1080_1920_1_s               |        0|   1|    744|    376|    0|
+    |process_rBRIEF_8_1080_1920_U0                     |process_rBRIEF_8_1080_1920_s                   |      122|  12|  34834|  21745|    0|
+    |process_resize_8_0_1080_1920_1_U0                 |process_resize_8_0_1080_1920_1_s               |        3|   6|   2230|   3277|    0|
+    |process_stream2xfMat_8_0_1080_1920_1_U0           |process_stream2xfMat_8_0_1080_1920_1_s         |        0|   1|     54|    177|    0|
+    |process_xfMat2stream_8_0_1080_1920_1_U0           |process_xfMat2stream_8_0_1080_1920_1_s         |        0|   1|     54|    159|    0|
+    +--------------------------------------------------+-----------------------------------------------+---------+----+-------+-------+-----+
+    |Total                                             |                                               |      139|  33|  45801|  38899|    0|
+    +--------------------------------------------------+-----------------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+    |          Name          | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+    |blur1_U                 |        0|   99|   0|    -|     2|    8|       16|
+    |blur2_U                 |        4|  163|   0|    -|  7680|    8|    61440|
+    |blur3_U                 |        4|  163|   0|    -|  7680|    8|    61440|
+    |desc_U                  |        0|   99|   0|    -|     2|  512|     1024|
+    |height_c21_U            |        0|   99|   0|    -|     2|   11|       22|
+    |height_c_U              |        0|   99|   0|    -|     2|   11|       22|
+    |height_new_c23_U        |        0|   99|   0|    -|     5|   11|       55|
+    |height_new_c29_U        |        0|   99|   0|    -|     2|   11|       22|
+    |height_new_c31_U        |        0|   99|   0|    -|     2|   11|       22|
+    |height_new_c33_U        |        0|   99|   0|    -|     2|   11|       22|
+    |height_new_c_U          |        0|   99|   0|    -|     2|   11|       22|
+    |img1_U                  |        4|  163|   0|    -|  7680|    8|    61440|
+    |img2_U                  |        4|  163|   0|    -|  7680|    8|    61440|
+    |img3_U                  |        4|  163|   0|    -|  7680|    8|    61440|
+    |img_U                   |        0|   99|   0|    -|     2|    8|       16|
+    |img_mat_cols_c26_U      |        0|   99|   0|    -|     2|   11|       22|
+    |img_mat_cols_c_U        |        0|   99|   0|    -|     2|   11|       22|
+    |img_mat_data_U          |        0|   99|   0|    -|     2|    8|       16|
+    |img_mat_rows_c25_U      |        0|   99|   0|    -|     2|   11|       22|
+    |img_mat_rows_c_U        |        0|   99|   0|    -|     2|   11|       22|
+    |mask2_U                 |        0|   99|   0|    -|     2|    8|       16|
+    |mask3_U                 |        0|   99|   0|    -|     2|    8|       16|
+    |resized_img_U           |        0|   99|   0|    -|     2|    8|       16|
+    |resized_mat_cols_c28_U  |        0|   99|   0|    -|     2|   11|       22|
+    |resized_mat_cols_c_U    |        0|   99|   0|    -|     3|   11|       33|
+    |resized_mat_data_U      |        0|   99|   0|    -|     2|    8|       16|
+    |resized_mat_rows_c27_U  |        0|   99|   0|    -|     2|   11|       22|
+    |resized_mat_rows_c_U    |        0|   99|   0|    -|     3|   11|       33|
+    |threshold_c_U           |        0|   99|   0|    -|     7|    8|       56|
+    |width_c22_U             |        0|   99|   0|    -|     2|   11|       22|
+    |width_c_U               |        0|   99|   0|    -|     2|   11|       22|
+    |width_new_c24_U         |        0|   99|   0|    -|     5|   11|       55|
+    |width_new_c30_U         |        0|   99|   0|    -|     2|   11|       22|
+    |width_new_c32_U         |        0|   99|   0|    -|     2|   11|       22|
+    |width_new_c34_U         |        0|   99|   0|    -|     2|   11|       22|
+    |width_new_c_U           |        0|   99|   0|    -|     2|   11|       22|
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+    |Total                   |       20| 3884|   0|    0| 38475|  858|   308964|
+    +------------------------+---------+-----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                         Variable Name                         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                                                        |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                                                  |       and|   0|  0|   2|           1|           1|
+    |process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_start_full_n  |       and|   0|  0|   2|           1|           1|
+    |process_ORB_8_0_1080_1920_1_entry57_U0_ap_start                |       and|   0|  0|   2|           1|           1|
+    |process_ORB_8_0_1080_1920_1_entry57_U0_start_full_n            |       and|   0|  0|   2|           1|           1|
+    |process_output_8_0_1080_1920_1_U0_ap_start                     |       and|   0|  0|   2|           1|           1|
+    |ap_sync_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_process_output_8_0_1080_1920_1_U0_ap_ready             |        or|   0|  0|   2|           1|           1|
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                          |          |   0|  0|  16|           8|           8|
+    +---------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------------------+----+-----------+-----+-----------+
+    |                             Name                            | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_process_output_8_0_1080_1920_1_U0_ap_ready       |   9|          2|    1|          2|
+    +-------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                        |  18|          4|    2|          4|
+    +-------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------+---+----+-----+-----------+
+    |                             Name                            | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_process_output_8_0_1080_1920_1_U0_ap_ready       |  1|   0|    1|          0|
+    +-------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                        |  2|   0|    2|          0|
+    +-------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+----------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |           Source Object          |    C Type    |
++-------------------+-----+-----+------------+----------------------------------+--------------+
+|src_TDATA          |   in|    8|        axis|                      src_V_data_V|       pointer|
+|src_TKEEP          |   in|    1|        axis|                      src_V_keep_V|       pointer|
+|src_TSTRB          |   in|    1|        axis|                      src_V_strb_V|       pointer|
+|src_TUSER          |   in|    1|        axis|                      src_V_user_V|       pointer|
+|src_TLAST          |   in|    1|        axis|                      src_V_last_V|       pointer|
+|src_TID            |   in|    1|        axis|                        src_V_id_V|       pointer|
+|src_TDEST          |   in|    1|        axis|                      src_V_dest_V|       pointer|
+|src_TVALID         |   in|    1|        axis|                      src_V_dest_V|       pointer|
+|src_TREADY         |  out|    1|        axis|                      src_V_dest_V|       pointer|
+|dst_TDATA          |  out|  296|        axis|                      dst_V_data_V|       pointer|
+|dst_TKEEP          |  out|   37|        axis|                      dst_V_keep_V|       pointer|
+|dst_TSTRB          |  out|   37|        axis|                      dst_V_strb_V|       pointer|
+|dst_TUSER          |  out|    1|        axis|                      dst_V_user_V|       pointer|
+|dst_TLAST          |  out|    1|        axis|                      dst_V_last_V|       pointer|
+|dst_TID            |  out|    1|        axis|                        dst_V_id_V|       pointer|
+|dst_TDEST          |  out|    1|        axis|                      dst_V_dest_V|       pointer|
+|dst_TVALID         |  out|    1|        axis|                      dst_V_dest_V|       pointer|
+|dst_TREADY         |   in|    1|        axis|                      dst_V_dest_V|       pointer|
+|height             |   in|   11|     ap_none|                            height|        scalar|
+|height_ap_vld      |   in|    1|     ap_none|                            height|        scalar|
+|width              |   in|   11|     ap_none|                             width|        scalar|
+|width_ap_vld       |   in|    1|     ap_none|                             width|        scalar|
+|height_new         |   in|   11|     ap_none|                        height_new|        scalar|
+|height_new_ap_vld  |   in|    1|     ap_none|                        height_new|        scalar|
+|width_new          |   in|   11|     ap_none|                         width_new|        scalar|
+|width_new_ap_vld   |   in|    1|     ap_none|                         width_new|        scalar|
+|threshold          |   in|    8|     ap_none|                         threshold|        scalar|
+|threshold_ap_vld   |   in|    1|     ap_none|                         threshold|        scalar|
+|length_r           |  out|   32|      ap_vld|                          length_r|       pointer|
+|length_r_ap_vld    |  out|    1|      ap_vld|                          length_r|       pointer|
+|cntTree_address0   |  out|    8|   ap_memory|                           cntTree|         array|
+|cntTree_ce0        |  out|    1|   ap_memory|                           cntTree|         array|
+|cntTree_d0         |  out|   32|   ap_memory|                           cntTree|         array|
+|cntTree_q0         |   in|   32|   ap_memory|                           cntTree|         array|
+|cntTree_we0        |  out|    1|   ap_memory|                           cntTree|         array|
+|cntTree_address1   |  out|    8|   ap_memory|                           cntTree|         array|
+|cntTree_ce1        |  out|    1|   ap_memory|                           cntTree|         array|
+|cntTree_d1         |  out|   32|   ap_memory|                           cntTree|         array|
+|cntTree_q1         |   in|   32|   ap_memory|                           cntTree|         array|
+|cntTree_we1        |  out|    1|   ap_memory|                           cntTree|         array|
+|idxTree_address0   |  out|   15|   ap_memory|                           idxTree|         array|
+|idxTree_ce0        |  out|    1|   ap_memory|                           idxTree|         array|
+|idxTree_d0         |  out|   32|   ap_memory|                           idxTree|         array|
+|idxTree_q0         |   in|   32|   ap_memory|                           idxTree|         array|
+|idxTree_we0        |  out|    1|   ap_memory|                           idxTree|         array|
+|idxTree_address1   |  out|   15|   ap_memory|                           idxTree|         array|
+|idxTree_ce1        |  out|    1|   ap_memory|                           idxTree|         array|
+|idxTree_d1         |  out|   32|   ap_memory|                           idxTree|         array|
+|idxTree_q1         |   in|   32|   ap_memory|                           idxTree|         array|
+|idxTree_we1        |  out|    1|   ap_memory|                           idxTree|         array|
+|ap_clk             |   in|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
+|ap_continue        |   in|    1|  ap_ctrl_hs|  process_ORB<8, 0, 1080, 1920, 1>|  return value|
++-------------------+-----+-----+------------+----------------------------------+--------------+
+

@@ -1,0 +1,472 @@
+############################################
+#             Begin Testbench              #
+############################################
+
+input shape: (60, 80)
+N features: 6
+36 18 0 8EBD4C90 7B9A1619 F7024B36 91B33BE9 8866BE2C 1398179E 67B8F1DF 9A26AD22
+39 19 0 8CBA4CFD EB9C0638 970E6B36 9583AB6B 847CE820 DB191196 6780A1DF 9A42A732
+56 22 0 42CE0CF3 7F15D1DB 955A6B5A 10C79B89 986E9F0F 19BD3587 EF50CD9D FA58B138
+33 24 0 CCF88CFF F99E0E3A F7062BBE 9D17AA6B E4B6E821 FFDC55D7 EFC891DE 9A628F33
+55 27 0 6A7C0953 1B92F9D3 ED722B0A C1CFF3C8 5027DF2E 0BF48C89 4252D44D FC7A183A
+51 35 0 E0768C67 14DAD997 D27163A9 E95F8178 F91C1E9B 1AB45079 58E94E45 F06901B3
+
+############################################
+#              End Testbench               #
+############################################
+The maximum depth reached by any of the B hls::stream() instances in the design is 12C0
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 12C0
+
+C:\Users\lxl\Documents\vitis_hls_ws\Project\Project\hls_project\solution1\sim\verilog>set PATH= 
+
+C:\Users\lxl\Documents\vitis_hls_ws\Project\Project\hls_project\solution1\sim\verilog>call C:/Xilinx/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_ORB_accel_top glbl -prj ORB_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s ORB_accel  
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_ORB_accel_top glbl -prj ORB_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s ORB_accel 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_axi_s_dst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_dst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_axi_s_src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_src
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ORB_accel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_am_addmul_11ns_4ns_11ns_23_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_am_addmul_11ns_4ns_11ns_23_4_1_DSP48_5
+INFO: [VRFC 10-311] analyzing module ORB_accel_am_addmul_11ns_4ns_11ns_23_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_cntTree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_cntTree_ram
+INFO: [VRFC 10-311] analyzing module ORB_accel_cntTree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_descriptor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_descriptor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_descriptor_bit_pattern_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_descriptor_bit_pattern_31_rom
+INFO: [VRFC 10-311] analyzing module ORB_accel_descriptor_bit_pattern_31
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fast_score.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fast_score
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w11_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w11_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w11_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w11_d3_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w11_d3_S_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w11_d3_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w11_d5_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w11_d5_S_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w11_d5_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w512_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w512_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w512_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w8_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w8_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w8_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w8_d7680_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w8_d7680_A_ram
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w8_d7680_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_fifo_w8_d7_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w8_d7_S_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_fifo_w8_d7_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_generic_atan2_20_20_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_generic_atan2_20_20_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56_rom
+INFO: [VRFC 10-311] analyzing module ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_idxTree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_idxTree_ram
+INFO: [VRFC 10-311] analyzing module ORB_accel_idxTree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_12ns_10s_22s_23_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_12ns_10s_22s_23_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_12ns_9s_21s_22_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_12ns_9s_21s_22_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1_DSP48_14
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1_DSP48_13
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_3ns_11ns_12ns_12_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_3ns_11ns_12ns_12_4_1_DSP48_8
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_3ns_11ns_12ns_12_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_6ns_7ns_6ns_11_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_6ns_7ns_6ns_11_4_1_DSP48_11
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_6ns_7ns_6ns_11_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_8ns_5s_18s_18_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_8ns_5s_18s_18_4_1_DSP48_12
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_8ns_5s_18s_18_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_8ns_8ns_15ns_15_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_8ns_8ns_15ns_15_4_1_DSP48_15
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_8ns_8ns_15ns_15_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_muladd_9s_5s_14ns_14_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_9
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_muladd_9s_5s_14ns_14_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1_DSP48_10
+INFO: [VRFC 10-311] analyzing module ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_48ns_42s_74_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_48ns_42s_74_1_1_Multiplier_0
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_48ns_42s_74_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_8ns_10ns_17_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_8ns_10ns_17_1_1_Multiplier_2
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_8ns_10ns_17_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_8ns_8ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_8ns_8ns_15_1_1_Multiplier_4
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_8ns_8ns_15_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_8ns_9ns_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_8ns_9ns_16_1_1_Multiplier_1
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_8ns_9ns_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_9s_5s_14_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_9s_5s_14_1_1_Multiplier_3
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_9s_5s_14_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_mul_10ns_15ns_24_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_10ns_15ns_24_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_mul_11ns_11ns_22_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_11ns_11ns_22_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_11ns_11ns_22_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_mul_12ns_12ns_24_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_12ns_12ns_24_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_mul_12ns_9s_21_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_12ns_9s_21_4_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_12ns_9s_21_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mul_mul_8ns_11ns_18_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_8ns_11ns_18_4_1_DSP48_6
+INFO: [VRFC 10-311] analyzing module ORB_accel_mul_mul_8ns_11ns_18_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mux_136911_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mux_136911_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_mux_376_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_mux_376_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_blur_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_blur_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_blur_8_0_1080_1920_1_s_line_buffer_val_V_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_blur_8_0_1080_1920_1_s_line_buffer_val_V_1_ram
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_blur_8_0_1080_1920_1_s_line_buffer_val_V_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_fast_8_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_fast_8_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_input_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_input_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_nms_8_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_nms_8_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_Block_split1_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_ORB_8_0_1080_1920_1_Block_split1_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_entry57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_ORB_8_0_1080_1920_1_entry57
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_ORB_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_output_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_output_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_rBRIEF_8_1080_1920_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax_rom
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_img_line_val_V_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_rBRIEF_8_1080_1920_s_img_line_val_V_0_ram
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_rBRIEF_8_1080_1920_s_img_line_val_V_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_resize_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_resize_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_stream2xfMat_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_stream2xfMat_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_process_xfMat2stream_8_0_1080_1920_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_process_xfMat2stream_8_0_1080_1920_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_regslice_both
+INFO: [VRFC 10-311] analyzing module ORB_accel_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_line_buffer_V_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_line_buffer_V_0_0_ram
+INFO: [VRFC 10-311] analyzing module ORB_accel_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_line_buffer_V_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_resize_1_0_1080_1920_1080_1920_1_8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_resize_1_0_1080_1920_1080_1920_1_8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_round_fixed_16_9_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_round_fixed_16_9_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_scaleCompute_17_42_20_48_16_1_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_scaleCompute_17_42_20_48_16_1_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_blur_8_0_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_blur_8_0_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_blur_8_0_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_fast_8_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_fast_8_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_fast_8_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_input_8_0_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_input_8_0_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_input_8_0_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_nms_8_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_nms_8_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_nms_8_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_rBRIEF_8_1080_1920_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_rBRIEF_8_1080_1920_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_rBRIEF_8_1080_1920_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_resize_8_0_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_resize_8_0_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_resize_8_0_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_stream2xfMat_8_0_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_stream2xfMat_8_0_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_stream2xfMat_8_0_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_start_for_process_xfMat2stream_8_0_1080_1920_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_xfMat2stream_8_0_1080_1920_1_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module ORB_accel_start_for_process_xfMat2stream_8_0_1080_1920_1_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_udiv_23ns_11ns_23_27_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_udiv_23ns_11ns_23_27_1_div_u
+INFO: [VRFC 10-311] analyzing module ORB_accel_udiv_23ns_11ns_23_27_1_div
+INFO: [VRFC 10-311] analyzing module ORB_accel_udiv_23ns_11ns_23_27_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_udiv_43ns_16ns_43_47_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_udiv_43ns_16ns_43_47_seq_1_div_u
+INFO: [VRFC 10-311] analyzing module ORB_accel_udiv_43ns_16ns_43_47_seq_1_div
+INFO: [VRFC 10-311] analyzing module ORB_accel_udiv_43ns_16ns_43_47_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_urem_23ns_11ns_23_27_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_urem_23ns_11ns_23_27_1_div_u
+INFO: [VRFC 10-311] analyzing module ORB_accel_urem_23ns_11ns_23_27_1_div
+INFO: [VRFC 10-311] analyzing module ORB_accel_urem_23ns_11ns_23_27_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel_xfUDivResize.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ORB_accel_xfUDivResize
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.ORB_accel_cntTree_ram
+Compiling module xil_defaultlib.ORB_accel_cntTree(DataWidth=32,A...
+Compiling module xil_defaultlib.ORB_accel_idxTree_ram
+Compiling module xil_defaultlib.ORB_accel_idxTree(DataWidth=32,A...
+Compiling module xil_defaultlib.ORB_accel_control_s_axi
+Compiling module xil_defaultlib.ORB_accel_process_ORB_8_0_1080_1...
+Compiling module xil_defaultlib.ORB_accel_process_ORB_8_0_1080_1...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_11ns_11ns_22_4...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_11ns_11ns_22_4...
+Compiling module xil_defaultlib.ORB_accel_process_input_8_0_1080...
+Compiling module xil_defaultlib.ORB_accel_process_stream2xfMat_8...
+Compiling module xil_defaultlib.ORB_accel_resizeNNBilinear_0_108...
+Compiling module xil_defaultlib.ORB_accel_resizeNNBilinear_0_108...
+Compiling module xil_defaultlib.ORB_accel_udiv_43ns_16ns_43_47_s...
+Compiling module xil_defaultlib.ORB_accel_udiv_43ns_16ns_43_47_s...
+Compiling module xil_defaultlib.ORB_accel_udiv_43ns_16ns_43_47_s...
+Compiling module xil_defaultlib.ORB_accel_xfUDivResize
+Compiling module xil_defaultlib.ORB_accel_mul_48ns_42s_74_1_1_Mu...
+Compiling module xil_defaultlib.ORB_accel_mul_48ns_42s_74_1_1(ID...
+Compiling module xil_defaultlib.ORB_accel_scaleCompute_17_42_20_...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_12ns_12ns_24_4...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_12ns_12ns_24_4...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_12ns_9s_21_4_1...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_12ns_9s_21_4_1...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_12ns_9s_21s...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_12ns_9s_21s...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_12ns_10s_22...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_12ns_10s_22...
+Compiling module xil_defaultlib.ORB_accel_resizeNNBilinear_0_108...
+Compiling module xil_defaultlib.ORB_accel_resize_1_0_1080_1920_1...
+Compiling module xil_defaultlib.ORB_accel_process_resize_8_0_108...
+Compiling module xil_defaultlib.ORB_accel_process_xfMat2stream_8...
+Compiling module xil_defaultlib.ORB_accel_process_blur_8_0_1080_...
+Compiling module xil_defaultlib.ORB_accel_process_blur_8_0_1080_...
+Compiling module xil_defaultlib.ORB_accel_udiv_23ns_11ns_23_27_1...
+Compiling module xil_defaultlib.ORB_accel_udiv_23ns_11ns_23_27_1...
+Compiling module xil_defaultlib.ORB_accel_udiv_23ns_11ns_23_27_1...
+Compiling module xil_defaultlib.ORB_accel_urem_23ns_11ns_23_27_1...
+Compiling module xil_defaultlib.ORB_accel_urem_23ns_11ns_23_27_1...
+Compiling module xil_defaultlib.ORB_accel_urem_23ns_11ns_23_27_1...
+Compiling module xil_defaultlib.ORB_accel_mul_8ns_9ns_16_1_1_Mul...
+Compiling module xil_defaultlib.ORB_accel_mul_8ns_9ns_16_1_1(ID=...
+Compiling module xil_defaultlib.ORB_accel_mul_8ns_10ns_17_1_1_Mu...
+Compiling module xil_defaultlib.ORB_accel_mul_8ns_10ns_17_1_1(ID...
+Compiling module xil_defaultlib.ORB_accel_am_addmul_11ns_4ns_11n...
+Compiling module xil_defaultlib.ORB_accel_am_addmul_11ns_4ns_11n...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_8ns_11ns_18_4_...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_8ns_11ns_18_4_...
+Compiling module xil_defaultlib.ORB_accel_process_blur_8_0_1080_...
+Compiling module xil_defaultlib.ORB_accel_fast_score
+Compiling module xil_defaultlib.ORB_accel_process_fast_8_1080_19...
+Compiling module xil_defaultlib.ORB_accel_process_nms_8_1080_192...
+Compiling module xil_defaultlib.ORB_accel_process_rBRIEF_8_1080_...
+Compiling module xil_defaultlib.ORB_accel_process_rBRIEF_8_1080_...
+Compiling module xil_defaultlib.ORB_accel_process_rBRIEF_8_1080_...
+Compiling module xil_defaultlib.ORB_accel_process_rBRIEF_8_1080_...
+Compiling module xil_defaultlib.ORB_accel_generic_atan2_20_20_s_...
+Compiling module xil_defaultlib.ORB_accel_generic_atan2_20_20_s_...
+Compiling module xil_defaultlib.ORB_accel_descriptor_bit_pattern...
+Compiling module xil_defaultlib.ORB_accel_descriptor_bit_pattern...
+Compiling module xil_defaultlib.ORB_accel_round_fixed_16_9_s
+Compiling module xil_defaultlib.ORB_accel_mul_9s_5s_14_1_1_Multi...
+Compiling module xil_defaultlib.ORB_accel_mul_9s_5s_14_1_1(ID=1,...
+Compiling module xil_defaultlib.ORB_accel_mux_136911_8_1_1(ID=1,...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_10ns_15ns_24_4...
+Compiling module xil_defaultlib.ORB_accel_mul_mul_10ns_15ns_24_4...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_3ns_11ns_12...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_3ns_11ns_12...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_9s_5s_14ns_...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_9s_5s_14ns_...
+Compiling module xil_defaultlib.ORB_accel_mac_mulsub_9s_5s_14ns_...
+Compiling module xil_defaultlib.ORB_accel_mac_mulsub_9s_5s_14ns_...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_6ns_7ns_6ns...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_6ns_7ns_6ns...
+Compiling module xil_defaultlib.ORB_accel_descriptor
+Compiling module xil_defaultlib.ORB_accel_generic_atan2_20_20_s
+Compiling module xil_defaultlib.ORB_accel_mux_376_8_1_1(ID=1,din...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_8ns_5s_18s_...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_8ns_5s_18s_...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_20s_9ns_20n...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_20s_9ns_20n...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_20s_4ns_20n...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_20s_4ns_20n...
+Compiling module xil_defaultlib.ORB_accel_process_rBRIEF_8_1080_...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_8ns_8ns_15n...
+Compiling module xil_defaultlib.ORB_accel_mac_muladd_8ns_8ns_15n...
+Compiling module xil_defaultlib.ORB_accel_process_output_8_0_108...
+Compiling module xil_defaultlib.ORB_accel_fifo_w11_d2_S_shiftReg
+Compiling module xil_defaultlib.ORB_accel_fifo_w11_d2_S
+Compiling module xil_defaultlib.ORB_accel_fifo_w8_d7_S_shiftReg
+Compiling module xil_defaultlib.ORB_accel_fifo_w8_d7_S
+Compiling module xil_defaultlib.ORB_accel_fifo_w11_d5_S_shiftReg
+Compiling module xil_defaultlib.ORB_accel_fifo_w11_d5_S
+Compiling module xil_defaultlib.ORB_accel_fifo_w11_d3_S_shiftReg
+Compiling module xil_defaultlib.ORB_accel_fifo_w11_d3_S
+Compiling module xil_defaultlib.ORB_accel_fifo_w8_d2_S_shiftReg
+Compiling module xil_defaultlib.ORB_accel_fifo_w8_d2_S
+Compiling module xil_defaultlib.ORB_accel_fifo_w8_d7680_A_ram
+Compiling module xil_defaultlib.ORB_accel_fifo_w8_d7680_A
+Compiling module xil_defaultlib.ORB_accel_fifo_w512_d2_S_shiftRe...
+Compiling module xil_defaultlib.ORB_accel_fifo_w512_d2_S
+Compiling module xil_defaultlib.ORB_accel_start_for_process_ORB_...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_ORB_...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_inpu...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_inpu...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_fast...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_fast...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_stre...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_stre...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_resi...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_resi...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_blur...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_blur...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_xfMa...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_xfMa...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_nms_...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_nms_...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_rBRI...
+Compiling module xil_defaultlib.ORB_accel_start_for_process_rBRI...
+Compiling module xil_defaultlib.ORB_accel_process_ORB_8_0_1080_1...
+Compiling module xil_defaultlib.ORB_accel_mul_8ns_8ns_15_1_1_Mul...
+Compiling module xil_defaultlib.ORB_accel_mul_8ns_8ns_15_1_1(ID=...
+Compiling module xil_defaultlib.ORB_accel_regslice_both(DataWidt...
+Compiling module xil_defaultlib.ORB_accel_regslice_both(DataWidt...
+Compiling module xil_defaultlib.ORB_accel_regslice_both(DataWidt...
+Compiling module xil_defaultlib.ORB_accel_regslice_both(DataWidt...
+Compiling module xil_defaultlib.ORB_accel
+Compiling module xil_defaultlib.fifo(DEPTH=4800)
+Compiling module xil_defaultlib.fifo(DEPTH=4800,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_src
+Compiling module xil_defaultlib.fifo(DEPTH=12,WIDTH=296)
+Compiling module xil_defaultlib.fifo(DEPTH=12,WIDTH=37)
+Compiling module xil_defaultlib.fifo(DEPTH=12,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_dst
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_ORB_accel_top
+Compiling module work.glbl
+Built simulation snapshot ORB_accel
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/xsim.dir/ORB_accel/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 17 17:03:53 2024...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ORB_accel/xsim_script.tcl
+# xsim {ORB_accel} -autoloadwcfg -tclbatch {ORB_accel.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ORB_accel.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "2091365000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2091405 ns : File "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel.autotb.v" Line 523
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 933.391 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jan 17 17:04:29 2024...
+############################################
+#             Begin Testbench              #
+############################################
+
+input shape: (60, 80)
+N features: 6
+36 18 0 8EBD4C94 7B9E1639 F7024B36 91B33BCD C466BE2C 9358179E 67B8F1DF 9A00A502
+39 19 0 8CF24CFD E89C0638 97062BFF 9502AA2B 84F4E821 FB5811D6 E78C81DE 9A43A732
+56 22 0 CA8E0CF2 7F14D1FB D55A2B1E 10CF9B89 906A9F0E 19B5358F EF50DDD9 BA18B03A
+33 24 0 CCF88CFF F8B60E3A F7262BBE 9D16AA6B E4B6E821 D7D851D7 FFC891DE 9A628F33
+55 27 0 4A7C2953 1B9AF1D3 EC12AB08 C2CFB3C8 5027DF2E 0BF48C89 42D2D40D FC3A083A
+51 35 0 E0748C67 14DAD997 D27163A9 E95F8178 F91C1E9F 1AB45079 48E94E45 F0690193
+
+############################################
+#              End Testbench               #
+############################################
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 12C0

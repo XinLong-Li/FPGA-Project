@@ -6,7 +6,7 @@
 <Project Version="7" Minor="54" Path="C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/vivado_project/ORB_accel.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="3e2ef97725364b368dd1a6bba58e31cb"/>
+    <Option Name="Id" Val="29ad76bc9ca64a12ae9afb6c56ed6ea3"/>
     <Option Name="Part" Val="xczu7ev-ffvc1156-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -81,35 +81,35 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_rst_ps8_0_100M_0/ORB_accel_rst_ps8_0_100M_0.xci">
+          <Proxy FileSetName="ORB_accel_rst_ps8_0_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_zynq_ultra_ps_e_0_0/ORB_accel_zynq_ultra_ps_e_0_0.xci">
+          <Proxy FileSetName="ORB_accel_zynq_ultra_ps_e_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_xbar_0/ORB_accel_xbar_0.xci">
+          <Proxy FileSetName="ORB_accel_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_axi_smc_1_0/ORB_accel_axi_smc_1_0.xci">
+          <Proxy FileSetName="ORB_accel_axi_smc_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_auto_ds_0/ORB_accel_auto_ds_0.xci">
           <Proxy FileSetName="ORB_accel_auto_ds_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_auto_pc_0/ORB_accel_auto_pc_0.xci">
           <Proxy FileSetName="ORB_accel_auto_pc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_rst_ps8_0_100M_0/ORB_accel_rst_ps8_0_100M_0.xci">
-          <Proxy FileSetName="ORB_accel_rst_ps8_0_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_xbar_0/ORB_accel_xbar_0.xci">
-          <Proxy FileSetName="ORB_accel_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_ORB_accel_0_0/ORB_accel_ORB_accel_0_0.xci">
-          <Proxy FileSetName="ORB_accel_ORB_accel_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_axi_smc_0/ORB_accel_axi_smc_0.xci">
           <Proxy FileSetName="ORB_accel_axi_smc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_axi_smc_1_0/ORB_accel_axi_smc_1_0.xci">
-          <Proxy FileSetName="ORB_accel_axi_smc_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_axis_dwidth_converter_0_0/ORB_accel_axis_dwidth_converter_0_0.xci">
           <Proxy FileSetName="ORB_accel_axis_dwidth_converter_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_ORB_accel_0_0/ORB_accel_ORB_accel_0_0.xci">
+          <Proxy FileSetName="ORB_accel_ORB_accel_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_axi_dma_0_0/ORB_accel_axi_dma_0_0.xci">
           <Proxy FileSetName="ORB_accel_axi_dma_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ORB_accel.bd" FileRelPathName="ip/ORB_accel_zynq_ultra_ps_e_0_0/ORB_accel_zynq_ultra_ps_e_0_0.xci">
-          <Proxy FileSetName="ORB_accel_zynq_ultra_ps_e_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/ORB_accel/hdl/ORB_accel_wrapper.v">
@@ -151,6 +151,30 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
+    <FileSet Name="ORB_accel_rst_ps8_0_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_rst_ps8_0_100M_0" RelGenDir="$PGENDIR/ORB_accel_rst_ps8_0_100M_0">
+      <Config>
+        <Option Name="TopModule" Val="ORB_accel_rst_ps8_0_100M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ORB_accel_zynq_ultra_ps_e_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_zynq_ultra_ps_e_0_0" RelGenDir="$PGENDIR/ORB_accel_zynq_ultra_ps_e_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ORB_accel_zynq_ultra_ps_e_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ORB_accel_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_xbar_0" RelGenDir="$PGENDIR/ORB_accel_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="ORB_accel_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ORB_accel_axi_smc_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_axi_smc_1_0" RelGenDir="$PGENDIR/ORB_accel_axi_smc_1_0">
+      <Config>
+        <Option Name="TopModule" Val="ORB_accel_axi_smc_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="ORB_accel_auto_ds_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_auto_ds_0" RelGenDir="$PGENDIR/ORB_accel_auto_ds_0">
       <Config>
         <Option Name="TopModule" Val="ORB_accel_auto_ds_0"/>
@@ -163,33 +187,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ORB_accel_rst_ps8_0_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_rst_ps8_0_100M_0" RelGenDir="$PGENDIR/ORB_accel_rst_ps8_0_100M_0">
-      <Config>
-        <Option Name="TopModule" Val="ORB_accel_rst_ps8_0_100M_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ORB_accel_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_xbar_0" RelGenDir="$PGENDIR/ORB_accel_xbar_0">
-      <Config>
-        <Option Name="TopModule" Val="ORB_accel_xbar_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ORB_accel_ORB_accel_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_ORB_accel_0_0" RelGenDir="$PGENDIR/ORB_accel_ORB_accel_0_0">
-      <Config>
-        <Option Name="TopModule" Val="ORB_accel_ORB_accel_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="ORB_accel_axi_smc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_axi_smc_0" RelGenDir="$PGENDIR/ORB_accel_axi_smc_0">
       <Config>
         <Option Name="TopModule" Val="ORB_accel_axi_smc_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ORB_accel_axi_smc_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_axi_smc_1_0" RelGenDir="$PGENDIR/ORB_accel_axi_smc_1_0">
-      <Config>
-        <Option Name="TopModule" Val="ORB_accel_axi_smc_1_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -199,15 +199,15 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ORB_accel_axi_dma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_axi_dma_0_0" RelGenDir="$PGENDIR/ORB_accel_axi_dma_0_0">
+    <FileSet Name="ORB_accel_ORB_accel_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_ORB_accel_0_0" RelGenDir="$PGENDIR/ORB_accel_ORB_accel_0_0">
       <Config>
-        <Option Name="TopModule" Val="ORB_accel_axi_dma_0_0"/>
+        <Option Name="TopModule" Val="ORB_accel_ORB_accel_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ORB_accel_zynq_ultra_ps_e_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_zynq_ultra_ps_e_0_0" RelGenDir="$PGENDIR/ORB_accel_zynq_ultra_ps_e_0_0">
+    <FileSet Name="ORB_accel_axi_dma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ORB_accel_axi_dma_0_0" RelGenDir="$PGENDIR/ORB_accel_axi_dma_0_0">
       <Config>
-        <Option Name="TopModule" Val="ORB_accel_zynq_ultra_ps_e_0_0"/>
+        <Option Name="TopModule" Val="ORB_accel_axi_dma_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -241,6 +241,54 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="ORB_accel_rst_ps8_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_rst_ps8_0_100M_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_rst_ps8_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_rst_ps8_0_100M_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_rst_ps8_0_100M_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_zynq_ultra_ps_e_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_zynq_ultra_ps_e_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_xbar_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_xbar_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_axi_smc_1_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_axi_smc_1_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_smc_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_axi_smc_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_smc_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="ORB_accel_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_auto_ds_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_auto_ds_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_auto_ds_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
@@ -265,55 +313,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ORB_accel_rst_ps8_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_rst_ps8_0_100M_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_rst_ps8_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_rst_ps8_0_100M_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_rst_ps8_0_100M_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="ORB_accel_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_xbar_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_xbar_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="ORB_accel_ORB_accel_0_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_ORB_accel_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_ORB_accel_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_ORB_accel_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_ORB_accel_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="ORB_accel_axi_smc_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_axi_smc_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_smc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_axi_smc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_smc_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="ORB_accel_axi_smc_1_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_axi_smc_1_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_smc_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_axi_smc_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_smc_1_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -337,7 +337,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ORB_accel_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_axi_dma_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_axi_dma_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_dma_0_0_synth_1">
+    <Run Id="ORB_accel_ORB_accel_0_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_ORB_accel_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_ORB_accel_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_ORB_accel_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_ORB_accel_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -349,7 +349,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ORB_accel_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_zynq_ultra_ps_e_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_zynq_ultra_ps_e_0_0_synth_1">
+    <Run Id="ORB_accel_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="ORB_accel_axi_dma_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ORB_accel_axi_dma_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_dma_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -375,6 +375,82 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_rst_ps8_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_rst_ps8_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_rst_ps8_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_rst_ps8_0_100M_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_zynq_ultra_ps_e_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_xbar_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ORB_accel_axi_smc_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_smc_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_axi_smc_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_smc_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -417,83 +493,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ORB_accel_rst_ps8_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_rst_ps8_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_rst_ps8_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_rst_ps8_0_100M_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="ORB_accel_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_xbar_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="ORB_accel_ORB_accel_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_ORB_accel_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_ORB_accel_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_ORB_accel_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="ORB_accel_axi_smc_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_smc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_axi_smc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_smc_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="ORB_accel_axi_smc_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_smc_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_axi_smc_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_smc_1_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -531,7 +531,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ORB_accel_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_axi_dma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_dma_0_0_impl_1">
+    <Run Id="ORB_accel_ORB_accel_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_ORB_accel_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_ORB_accel_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_ORB_accel_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -550,7 +550,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ORB_accel_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_zynq_ultra_ps_e_0_0_impl_1">
+    <Run Id="ORB_accel_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ORB_accel_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ORB_accel_axi_dma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ORB_accel_axi_dma_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

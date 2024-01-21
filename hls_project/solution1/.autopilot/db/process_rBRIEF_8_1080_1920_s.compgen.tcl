@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1577
-set name ORB_accel_mux_376_8_1_1
+set id 2465
+set name ORB_accel_mux_646_8_1_1
 set corename simcore_mux
 set op mux
 set stage_num 1
@@ -81,8 +81,62 @@ set din35_width 8
 set din35_signed 0
 set din36_width 8
 set din36_signed 0
-set din37_width 6
+set din37_width 8
 set din37_signed 0
+set din38_width 8
+set din38_signed 0
+set din39_width 8
+set din39_signed 0
+set din40_width 8
+set din40_signed 0
+set din41_width 8
+set din41_signed 0
+set din42_width 8
+set din42_signed 0
+set din43_width 8
+set din43_signed 0
+set din44_width 8
+set din44_signed 0
+set din45_width 8
+set din45_signed 0
+set din46_width 8
+set din46_signed 0
+set din47_width 8
+set din47_signed 0
+set din48_width 8
+set din48_signed 0
+set din49_width 8
+set din49_signed 0
+set din50_width 8
+set din50_signed 0
+set din51_width 8
+set din51_signed 0
+set din52_width 8
+set din52_signed 0
+set din53_width 8
+set din53_signed 0
+set din54_width 8
+set din54_signed 0
+set din55_width 8
+set din55_signed 0
+set din56_width 8
+set din56_signed 0
+set din57_width 8
+set din57_signed 0
+set din58_width 8
+set din58_signed 0
+set din59_width 8
+set din59_signed 0
+set din60_width 8
+set din60_signed 0
+set din61_width 8
+set din61_signed 0
+set din62_width 8
+set din62_signed 0
+set din63_width 8
+set din63_signed 0
+set din64_width 6
+set din64_signed 0
 set dout_width 8
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
@@ -172,6 +226,60 @@ eval "ap_gen_simcore_mux { \
     din36_signed ${din36_signed} \
     din37_width ${din37_width} \
     din37_signed ${din37_signed} \
+    din38_width ${din38_width} \
+    din38_signed ${din38_signed} \
+    din39_width ${din39_width} \
+    din39_signed ${din39_signed} \
+    din40_width ${din40_width} \
+    din40_signed ${din40_signed} \
+    din41_width ${din41_width} \
+    din41_signed ${din41_signed} \
+    din42_width ${din42_width} \
+    din42_signed ${din42_signed} \
+    din43_width ${din43_width} \
+    din43_signed ${din43_signed} \
+    din44_width ${din44_width} \
+    din44_signed ${din44_signed} \
+    din45_width ${din45_width} \
+    din45_signed ${din45_signed} \
+    din46_width ${din46_width} \
+    din46_signed ${din46_signed} \
+    din47_width ${din47_width} \
+    din47_signed ${din47_signed} \
+    din48_width ${din48_width} \
+    din48_signed ${din48_signed} \
+    din49_width ${din49_width} \
+    din49_signed ${din49_signed} \
+    din50_width ${din50_width} \
+    din50_signed ${din50_signed} \
+    din51_width ${din51_width} \
+    din51_signed ${din51_signed} \
+    din52_width ${din52_width} \
+    din52_signed ${din52_signed} \
+    din53_width ${din53_width} \
+    din53_signed ${din53_signed} \
+    din54_width ${din54_width} \
+    din54_signed ${din54_signed} \
+    din55_width ${din55_width} \
+    din55_signed ${din55_signed} \
+    din56_width ${din56_width} \
+    din56_signed ${din56_signed} \
+    din57_width ${din57_width} \
+    din57_signed ${din57_signed} \
+    din58_width ${din58_width} \
+    din58_signed ${din58_signed} \
+    din59_width ${din59_width} \
+    din59_signed ${din59_signed} \
+    din60_width ${din60_width} \
+    din60_signed ${din60_signed} \
+    din61_width ${din61_width} \
+    din61_signed ${din61_signed} \
+    din62_width ${din62_width} \
+    din62_signed ${din62_signed} \
+    din63_width ${din63_width} \
+    din63_signed ${din63_signed} \
+    din64_width ${din64_width} \
+    din64_signed ${din64_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -275,6 +383,60 @@ eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
     din36_signed ${din36_signed} \
     din37_width ${din37_width} \
     din37_signed ${din37_signed} \
+    din38_width ${din38_width} \
+    din38_signed ${din38_signed} \
+    din39_width ${din39_width} \
+    din39_signed ${din39_signed} \
+    din40_width ${din40_width} \
+    din40_signed ${din40_signed} \
+    din41_width ${din41_width} \
+    din41_signed ${din41_signed} \
+    din42_width ${din42_width} \
+    din42_signed ${din42_signed} \
+    din43_width ${din43_width} \
+    din43_signed ${din43_signed} \
+    din44_width ${din44_width} \
+    din44_signed ${din44_signed} \
+    din45_width ${din45_width} \
+    din45_signed ${din45_signed} \
+    din46_width ${din46_width} \
+    din46_signed ${din46_signed} \
+    din47_width ${din47_width} \
+    din47_signed ${din47_signed} \
+    din48_width ${din48_width} \
+    din48_signed ${din48_signed} \
+    din49_width ${din49_width} \
+    din49_signed ${din49_signed} \
+    din50_width ${din50_width} \
+    din50_signed ${din50_signed} \
+    din51_width ${din51_width} \
+    din51_signed ${din51_signed} \
+    din52_width ${din52_width} \
+    din52_signed ${din52_signed} \
+    din53_width ${din53_width} \
+    din53_signed ${din53_signed} \
+    din54_width ${din54_width} \
+    din54_signed ${din54_signed} \
+    din55_width ${din55_width} \
+    din55_signed ${din55_signed} \
+    din56_width ${din56_width} \
+    din56_signed ${din56_signed} \
+    din57_width ${din57_width} \
+    din57_signed ${din57_signed} \
+    din58_width ${din58_width} \
+    din58_signed ${din58_signed} \
+    din59_width ${din59_width} \
+    din59_signed ${din59_signed} \
+    din60_width ${din60_width} \
+    din60_signed ${din60_signed} \
+    din61_width ${din61_width} \
+    din61_signed ${din61_signed} \
+    din62_width ${din62_width} \
+    din62_signed ${din62_signed} \
+    din63_width ${din63_width} \
+    din63_signed ${din63_signed} \
+    din64_width ${din64_width} \
+    din64_signed ${din64_signed} \
     dout_width ${dout_width} \
 }"
 } else {
@@ -283,394 +445,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
-set id 1581
-set name ORB_accel_mac_muladd_8ns_5s_18s_18_4_1
-set corename simcore_mac
-set op mac
-set stage_num 4
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 8
-set in0_signed 0
-set in1_width 5
-set in1_signed 1
-set in2_width 18
-set in2_signed 1
-set ce_width 1
-set ce_signed 0
-set out_width 18
-set exp i0*i1+i2
-set arg_lists {i0 {8 0 +} i1 {5 1 +} m {13 1 +} i2 {18 1 +} p {18 1 +} c_reg {1} rnd {0} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
-eval "ap_gen_simcore_mac { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    in2_width ${in2_width} \
-    in2_signed ${in2_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mac, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mac
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    in2_width ${in2_width} \
-    in2_signed ${in2_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
-set id 1582
-set name ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1
-set corename simcore_mac
-set op mac
-set stage_num 4
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 20
-set in0_signed 1
-set in1_width 9
-set in1_signed 0
-set in2_width 20
-set in2_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 20
-set exp i0*i1+i2
-set arg_lists {i0 {20 1 +} i1 {9 0 +} m {20 1 +} i2 {20 0 +} p {20 1 +} c_reg {1} rnd {0} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
-eval "ap_gen_simcore_mac { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    in2_width ${in2_width} \
-    in2_signed ${in2_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mac, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mac
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    in2_width ${in2_width} \
-    in2_signed ${in2_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
-set id 1583
-set name ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1
-set corename simcore_mac
-set op mac
-set stage_num 4
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 20
-set in0_signed 1
-set in1_width 4
-set in1_signed 0
-set in2_width 20
-set in2_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 20
-set exp i0*i1+i2
-set arg_lists {i0 {20 1 +} i1 {4 0 +} m {20 1 +} i2 {20 0 +} p {20 1 +} c_reg {1} rnd {0} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
-eval "ap_gen_simcore_mac { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    in2_width ${in2_width} \
-    in2_signed ${in2_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mac, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mac
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    in2_width ${in2_width} \
-    in2_signed ${in2_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 1588
-set hasByteEnable 0
-set MemName ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax
-set CoreName ap_simcore_mem
-set PortList { 1 }
-set DataWd 32
-set AddrRange 16
-set AddrWd 4
-set impl_style auto
-set TrueReset 0
-set IsROM 1
-set ROMData { "00000000000000000000000000001111" "00000000000000000000000000001111" "00000000000000000000000000001111" "00000000000000000000000000001111" "00000000000000000000000000001110" "00000000000000000000000000001110" "00000000000000000000000000001110" "00000000000000000000000000001101" "00000000000000000000000000001101" "00000000000000000000000000001100" "00000000000000000000000000001011" "00000000000000000000000000001010" "00000000000000000000000000001001" "00000000000000000000000000001000" "00000000000000000000000000000110" "00000000000000000000000000000011" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 0.677
-set ClkPeriod 10
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName ROM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
-  }
-}
-
-
-# Memory (RAM/ROM)  definition:
-set ID 1589
+set ID 2482
 set hasByteEnable 0
 set MemName ORB_accel_process_rBRIEF_8_1080_1920_s_img_line_val_V_0
 set CoreName ap_simcore_mem
@@ -764,7 +540,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1590 \
+    id 2483 \
     name img_in \
     type fifo \
     dir I \
@@ -779,7 +555,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1591 \
+    id 2484 \
     name img_blur \
     type fifo \
     dir I \
@@ -794,7 +570,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1592 \
+    id 2485 \
     name mask_in \
     type fifo \
     dir I \
@@ -809,7 +585,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1593 \
+    id 2486 \
     name desc_out \
     type fifo \
     dir O \
@@ -824,7 +600,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1594 \
+    id 2487 \
     name height \
     type fifo \
     dir I \
@@ -839,7 +615,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1595 \
+    id 2488 \
     name width \
     type fifo \
     dir I \

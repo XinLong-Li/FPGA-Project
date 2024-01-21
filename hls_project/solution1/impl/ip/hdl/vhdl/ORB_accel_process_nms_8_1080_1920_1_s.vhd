@@ -125,8 +125,8 @@ attribute shreg_extract : string;
     signal add_cast_i_reg_679 : STD_LOGIC_VECTOR (31 downto 0);
     signal cmp1242_i_fu_296_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal cmp1242_i_reg_684 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_7_fu_307_p2 : STD_LOGIC_VECTOR (10 downto 0);
-    signal i_7_reg_688 : STD_LOGIC_VECTOR (10 downto 0);
+    signal i_4_fu_307_p2 : STD_LOGIC_VECTOR (10 downto 0);
+    signal i_4_reg_688 : STD_LOGIC_VECTOR (10 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal icmp_ln176_fu_316_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -185,7 +185,7 @@ attribute shreg_extract : string;
     signal ap_block_pp1_stage0_01001 : BOOLEAN;
     signal width_cast_i_fu_282_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal tmp_fu_321_p4 : STD_LOGIC_VECTOR (9 downto 0);
-    signal tmp_19_fu_359_p4 : STD_LOGIC_VECTOR (9 downto 0);
+    signal tmp_21_fu_359_p4 : STD_LOGIC_VECTOR (9 downto 0);
     signal icmp_ln874_fu_399_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal or_ln193_1_fu_405_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal or_ln193_fu_410_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -423,7 +423,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-                i_reg_236 <= i_7_reg_688;
+                i_reg_236 <= i_4_reg_688;
             elsif ((not(((width_out_full_n = ap_const_logic_0) or (height_out_full_n = ap_const_logic_0) or (width_empty_n = ap_const_logic_0) or (height_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                 i_reg_236 <= ap_const_lv11_0;
             end if; 
@@ -468,7 +468,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                i_7_reg_688 <= i_7_fu_307_p2;
+                i_4_reg_688 <= i_4_fu_307_p2;
             end if;
         end if;
     end process;
@@ -860,11 +860,11 @@ begin
         end if; 
     end process;
 
-    i_7_fu_307_p2 <= std_logic_vector(unsigned(i_reg_236) + unsigned(ap_const_lv11_1));
+    i_4_fu_307_p2 <= std_logic_vector(unsigned(i_reg_236) + unsigned(ap_const_lv11_1));
     icmp_ln176_fu_316_p2 <= "1" when (i_reg_236 = height_read_reg_659) else "0";
     icmp_ln178_fu_343_p2 <= "1" when (j_reg_247 = width_read_reg_664) else "0";
     icmp_ln190_fu_354_p2 <= "1" when (signed(cnt_3_reg_258) < signed(add_cast_i_reg_679)) else "0";
-    icmp_ln191_1_fu_369_p2 <= "1" when (tmp_19_fu_359_p4 = ap_const_lv10_0) else "0";
+    icmp_ln191_1_fu_369_p2 <= "1" when (tmp_21_fu_359_p4 = ap_const_lv10_0) else "0";
     icmp_ln191_fu_331_p2 <= "1" when (tmp_fu_321_p4 = ap_const_lv10_0) else "0";
     icmp_ln212_fu_611_p2 <= "1" when (k_reg_267 = add_i_reg_674) else "0";
     icmp_ln874_fu_399_p2 <= "1" when (window_val_V_1_1_1_fu_112 = ap_const_lv8_0) else "0";
@@ -1079,7 +1079,7 @@ begin
         end if; 
     end process;
 
-    tmp_19_fu_359_p4 <= j_reg_247(10 downto 1);
+    tmp_21_fu_359_p4 <= j_reg_247(10 downto 1);
     tmp_fu_321_p4 <= i_reg_236(10 downto 1);
 
     width_blk_n_assign_proc : process(real_start, ap_done_reg, ap_CS_fsm_state1, width_empty_n)

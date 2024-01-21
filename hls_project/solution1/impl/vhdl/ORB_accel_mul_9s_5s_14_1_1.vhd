@@ -7,14 +7,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 
-entity ORB_accel_mul_9s_5s_14_1_1_Multiplier_3 is
+entity ORB_accel_mul_9s_5s_14_1_1_Multiplier_5 is
 port (
     a: in std_logic_vector(9 - 1 downto 0);
     b: in std_logic_vector(5 - 1 downto 0);
     p: out std_logic_vector(14 - 1 downto 0));
 end entity;
 
-architecture behav of ORB_accel_mul_9s_5s_14_1_1_Multiplier_3 is
+architecture behav of ORB_accel_mul_9s_5s_14_1_1_Multiplier_5 is
     signal a_i : std_logic_vector(9 - 1 downto 0);
     signal b_i : std_logic_vector(5 - 1 downto 0);
 begin
@@ -39,7 +39,7 @@ entity ORB_accel_mul_9s_5s_14_1_1 is
 end entity;
 
 architecture arch of ORB_accel_mul_9s_5s_14_1_1 is
-    component ORB_accel_mul_9s_5s_14_1_1_Multiplier_3 is
+    component ORB_accel_mul_9s_5s_14_1_1_Multiplier_5 is
         port (
             a : IN STD_LOGIC_VECTOR;
             b : IN STD_LOGIC_VECTOR;
@@ -49,7 +49,7 @@ architecture arch of ORB_accel_mul_9s_5s_14_1_1 is
 
 
 begin
-    ORB_accel_mul_9s_5s_14_1_1_Multiplier_3_U :  component ORB_accel_mul_9s_5s_14_1_1_Multiplier_3
+    ORB_accel_mul_9s_5s_14_1_1_Multiplier_5_U :  component ORB_accel_mul_9s_5s_14_1_1_Multiplier_5
     port map (
         a => din0,
         b => din1,

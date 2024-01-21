@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jan 17 17:03:54 2024
-# Process ID: 18264
+# Start of session at: Sun Jan 21 17:52:17 2024
+# Process ID: 7628
 # Current directory: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/ORB_accel/xsim_script.tcl}
 # Log file: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/xsim.log
@@ -22,9 +22,9 @@ source ORB_accel.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [n/a] @ "125000"
-// RTL Simulation : 1 / 1 [n/a] @ "2091365000"
+// RTL Simulation : 1 / 1 [n/a] @ "408605000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 2091405 ns : File "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel.autotb.v" Line 523
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 933.391 ; gain = 0.000
+$finish called at time : 408645 ns : File "C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/ORB_accel.autotb.v" Line 523
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:39 . Memory (MB): peak = 978.402 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jan 17 17:04:29 2024...
+INFO: [Common 17-206] Exiting xsim at Sun Jan 21 17:53:00 2024...

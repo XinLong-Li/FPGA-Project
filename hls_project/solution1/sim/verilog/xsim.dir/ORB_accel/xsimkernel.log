@@ -1,7 +1,7 @@
-Running: xsim.dir/ORB_accel/xsimk.exe -simmode gui -wdb ORB_accel.wdb -simrunnum 0 -socket 8581
+Running: xsim.dir/ORB_accel/xsimk.exe -simmode gui -wdb ORB_accel.wdb -simrunnum 0 -socket 2591
 Design successfully loaded
-Design Loading Memory Usage: 15560 KB (Peak: 15560 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 33648 KB (Peak: 33648 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 25416 KB (Peak: 25416 KB)
-Simulation CPU Usage: 23171 ms
+Simulation Memory Usage: 50780 KB (Peak: 50780 KB)
+Simulation CPU Usage: 32780 ms

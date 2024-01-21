@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'process_ORB_8_0_1080_1920_1_s'" level="0">
-<item name = "Date">Wed Jan 17 16:59:42 2024
+<item name = "Date">Sun Jan 21 17:48:09 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.274 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.299 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -40,7 +40,7 @@
 <column name="process_input_8_0_1080_1920_1_U0">process_input_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
 <column name="process_stream2xfMat_8_0_1080_1920_1_U0">process_stream2xfMat_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
 <column name="process_xfMat2stream_8_0_1080_1920_1_U0">process_xfMat2stream_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="process_ORB_8_0_1080_1920_1_entry57_U0">process_ORB_8_0_1080_1920_1_entry57, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="process_ORB_8_0_1080_1920_1_entry336_U0">process_ORB_8_0_1080_1920_1_entry336, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 <column name="process_ORB_8_0_1080_1920_1_Block_split1_proc_U0">process_ORB_8_0_1080_1920_1_Block_split1_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
@@ -60,12 +60,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 16, -</column>
 <column name="FIFO">20, -, 3884, 2384, -</column>
-<column name="Instance">139, 33, 45801, 38899, -</column>
+<column name="Instance">162, 110, 68388, 122497, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 18, -</column>
 <column name="Register">-, -, 2, -, -</column>
 <specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
-<specialColumn name="Utilization (%)">25, 1, 10, 17, 0</specialColumn>
+<specialColumn name="Utilization (%)">29, 6, 15, 54, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -73,16 +73,16 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="process_ORB_8_0_1080_1920_1_Block_split1_proc_U0">process_ORB_8_0_1080_1920_1_Block_split1_proc, 0, 0, 3, 110, 0</column>
-<column name="process_ORB_8_0_1080_1920_1_entry57_U0">process_ORB_8_0_1080_1920_1_entry57, 0, 0, 3, 83, 0</column>
-<column name="process_blur_8_0_1080_1920_1_U0">process_blur_8_0_1080_1920_1_s, 6, 11, 4472, 7150, 0</column>
+<column name="process_ORB_8_0_1080_1920_1_entry336_U0">process_ORB_8_0_1080_1920_1_entry336, 0, 0, 3, 83, 0</column>
+<column name="process_blur_8_0_1080_1920_1_U0">process_blur_8_0_1080_1920_1_s, 6, 11, 4902, 7603, 0</column>
 <column name="process_fast_8_1080_1920_1_U0">process_fast_8_1080_1920_1_s, 6, 0, 3091, 5016, 0</column>
-<column name="process_input_8_0_1080_1920_1_U0">process_input_8_0_1080_1920_1_s, 0, 1, 62, 161, 0</column>
+<column name="process_input_8_0_1080_1920_1_U0">process_input_8_0_1080_1920_1_s, 0, 1, 137, 650, 0</column>
 <column name="process_nms_8_1080_1920_1_U0">process_nms_8_1080_1920_1_s, 2, 0, 254, 645, 0</column>
 <column name="process_output_8_0_1080_1920_1_U0">process_output_8_0_1080_1920_1_s, 0, 1, 744, 376, 0</column>
-<column name="process_rBRIEF_8_1080_1920_U0">process_rBRIEF_8_1080_1920_s, 122, 12, 34834, 21745, 0</column>
+<column name="process_rBRIEF_8_1080_1920_U0">process_rBRIEF_8_1080_1920_s, 145, 89, 56766, 103423, 0</column>
 <column name="process_resize_8_0_1080_1920_1_U0">process_resize_8_0_1080_1920_1_s, 3, 6, 2230, 3277, 0</column>
-<column name="process_stream2xfMat_8_0_1080_1920_1_U0">process_stream2xfMat_8_0_1080_1920_1_s, 0, 1, 54, 177, 0</column>
-<column name="process_xfMat2stream_8_0_1080_1920_1_U0">process_xfMat2stream_8_0_1080_1920_1_s, 0, 1, 54, 159, 0</column>
+<column name="process_stream2xfMat_8_0_1080_1920_1_U0">process_stream2xfMat_8_0_1080_1920_1_s, 0, 1, 129, 666, 0</column>
+<column name="process_xfMat2stream_8_0_1080_1920_1_U0">process_xfMat2stream_8_0_1080_1920_1_s, 0, 1, 129, 648, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -138,22 +138,22 @@
 <column name="ap_idle">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
 <column name="process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
-<column name="process_ORB_8_0_1080_1920_1_entry57_U0_ap_start">and, 0, 0, 2, 1, 1</column>
-<column name="process_ORB_8_0_1080_1920_1_entry57_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+<column name="process_ORB_8_0_1080_1920_1_entry336_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="process_ORB_8_0_1080_1920_1_entry336_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
 <column name="process_output_8_0_1080_1920_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
-<column name="ap_sync_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_process_ORB_8_0_1080_1920_1_entry336_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_process_output_8_0_1080_1920_1_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_sync_reg_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_process_ORB_8_0_1080_1920_1_entry336_U0_ap_ready">9, 2, 1, 2</column>
 <column name="ap_sync_reg_process_output_8_0_1080_1920_1_U0_ap_ready">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_sync_reg_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_process_ORB_8_0_1080_1920_1_entry336_U0_ap_ready">1, 0, 1, 0</column>
 <column name="ap_sync_reg_process_output_8_0_1080_1920_1_U0_ap_ready">1, 0, 1, 0</column>
 </table>
 </item>

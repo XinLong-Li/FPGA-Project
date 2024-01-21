@@ -604,28 +604,28 @@
               "s00_couplers/S_AXI"
             ]
           },
-          "m00_couplers_to_ps8_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
               "xbar/S00_AXI"
             ]
           },
-          "xbar_to_m00_couplers": {
+          "m00_couplers_to_ps8_0_axi_periph": {
             "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
+              "M00_AXI",
+              "m00_couplers/M_AXI"
             ]
           },
           "m01_couplers_to_ps8_0_axi_periph": {
             "interface_ports": [
               "M01_AXI",
               "m01_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -691,6 +691,12 @@
           },
           "PSU_DDR_RAM_LOWADDR_OFFSET": {
             "value": "0x80000000"
+          },
+          "PSU_MIO_12_INPUT_TYPE": {
+            "value": "cmos"
+          },
+          "PSU_MIO_7_INPUT_TYPE": {
+            "value": "cmos"
           },
           "PSU_MIO_TREE_PERIPHERALS": {
             "value": "Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Feedback Clk##########I2C 1#I2C 1#UART 0#UART 0#UART 1#UART 1###CAN 1#CAN 1##DPAUX#DPAUX#DPAUX#DPAUX###############SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#MDIO 3#MDIO 3"
@@ -1592,6 +1598,12 @@
       }
     },
     "interface_nets": {
+      "ORB_accel_0_dst": {
+        "interface_ports": [
+          "ORB_accel_0/dst",
+          "axis_dwidth_converter_0/S_AXIS"
+        ]
+      },
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "ORB_accel_0/src",
@@ -1604,28 +1616,28 @@
           "axi_smc/S00_AXI"
         ]
       },
-      "axi_smc_1_M00_AXI": {
-        "interface_ports": [
-          "axi_smc_1/M00_AXI",
-          "zynq_ultra_ps_e_0/S_AXI_HP2_FPD"
-        ]
-      },
       "axi_dma_0_M_AXI_S2MM": {
         "interface_ports": [
           "axi_dma_0/M_AXI_S2MM",
           "axi_smc_1/S00_AXI"
         ]
       },
+      "axi_smc_1_M00_AXI": {
+        "interface_ports": [
+          "axi_smc_1/M00_AXI",
+          "zynq_ultra_ps_e_0/S_AXI_HP2_FPD"
+        ]
+      },
+      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
+        "interface_ports": [
+          "ps8_0_axi_periph/S00_AXI",
+          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
+        ]
+      },
       "axis_dwidth_converter_0_M_AXIS": {
         "interface_ports": [
           "axi_dma_0/S_AXIS_S2MM",
           "axis_dwidth_converter_0/M_AXIS"
-        ]
-      },
-      "ORB_accel_0_dst": {
-        "interface_ports": [
-          "ORB_accel_0/dst",
-          "axis_dwidth_converter_0/S_AXIS"
         ]
       },
       "axi_smc_M00_AXI": {
@@ -1644,12 +1656,6 @@
         "interface_ports": [
           "ORB_accel_0/s_axi_control",
           "ps8_0_axi_periph/M01_AXI"
-        ]
-      },
-      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
-        "interface_ports": [
-          "ps8_0_axi_periph/S00_AXI",
-          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
         ]
       }
     },

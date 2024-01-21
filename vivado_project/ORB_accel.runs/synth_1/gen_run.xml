@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1705482722">
+<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1705831052">
   <File Type="PA-TCL" Name="ORB_accel_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ORB_accel_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ORB_accel_wrapper_reports.tcl"/>
@@ -46,14 +46,14 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_rst_ps8_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ORB_accel_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_ORB_accel_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_rst_ps8_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axis_dwidth_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ORB_accel_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_ORB_accel_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_0"/>
 </GenRun>

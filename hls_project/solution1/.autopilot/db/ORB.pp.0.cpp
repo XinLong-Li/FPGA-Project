@@ -38582,13 +38582,20 @@ ap_fixed<10, 3> IC_Angle_31(xf::cv::Window<37, 37, ap_uint<8>>& window){
     int umax[16] = {15, 15, 15, 15, 14, 14, 14, 13, 13, 12, 11, 10, 9, 8, 6, 3};
     m_01 = 0;
     m_10 = 0;
-    VITIS_LOOP_12_1: for (int u = -15; u <= 15; ++u) {
-        m_10 += u * window(15, 15 + u);
+
+#pragma HLS pipeline II=1
+ VITIS_LOOP_14_1: for (int u = -15; u <= 15; ++u) {
+#pragma HLS unroll factor=5
+ m_10 += u * window(15, 15 + u);
     }
-    VITIS_LOOP_15_2: for (int v = 1; v <= 15; ++v) {
-        v_sum = 0;
+#pragma HLS pipeline
+ VITIS_LOOP_19_2: for (int v = 1; v <= 15; ++v)
+    {
+#pragma HLS unroll factor=5
+ v_sum = 0;
         int d = umax[v];
-        VITIS_LOOP_18_3: for (int u = -d; u <= d; ++u) {
+#pragma HLS pipeline
+ VITIS_LOOP_25_3: for (int u = -d; u <= d; ++u) {
             val_plus = window(15+v, 15+u);
             val_minus = window(15-v, 15+u);
             v_sum += (val_plus - val_minus);
@@ -38611,8 +38618,11 @@ ap_uint<256> descriptor(xf::cv::Window<37, 37, ap_uint<8>>& window, ap_fixed<10,
     sine = hls::sin<10, 3>(angle);
 
     loop_descriptor:
+
+
     for (int i = 0; i < 256; i++) {
-        x0 = bit_pattern_31[i*4];
+#pragma HLS unroll factor=8
+ x0 = bit_pattern_31[i*4];
         y0 = bit_pattern_31[i*4 + 1];
         x1 = bit_pattern_31[i*4 + 2];
         y1 = bit_pattern_31[i*4 + 3];
@@ -38634,8 +38644,10 @@ void process_input(
     int height,
     int width
 ) {
-    VITIS_LOOP_64_1: for (int i = 0; i < height*width; i++) {
-        dst.write(src.read().data);
+
+    VITIS_LOOP_75_1: for (int i = 0; i < height*width; i++) {
+#pragma HLS unroll factor=8
+ dst.write(src.read().data);
     }
 }
 
@@ -38644,8 +38656,11 @@ void process_stream2xfMat(
     hls::stream<ap_uint<W>>& src,
     xf::cv::Mat<TYPE, HEIGHT, WIDTH, NPC>& dst
 ) {
-    VITIS_LOOP_74_1: for (int i = 0; i < dst.cols * dst.rows; i++) {
-        dst.write(i, src.read());
+
+
+    VITIS_LOOP_88_1: for (int i = 0; i < dst.cols * dst.rows; i++) {
+#pragma HLS unroll factor=8
+ dst.write(i, src.read());
     }
 }
 
@@ -38654,8 +38669,11 @@ void process_xfMat2stream(
     xf::cv::Mat<TYPE, HEIGHT, WIDTH, NPC>& src,
     hls::stream<ap_uint<W>>& dst
 ) {
-    VITIS_LOOP_84_1: for (int i = 0; i < src.cols * src.rows; i++) {
-        dst.write(src.read(i));
+
+
+    VITIS_LOOP_101_1: for (int i = 0; i < src.cols * src.rows; i++) {
+#pragma HLS unroll factor=8
+ dst.write(src.read(i));
     }
 }
 
@@ -38701,23 +38719,33 @@ void process_blur(
     };
 
     loop_init_window_row:
+
+
     for (int i = 0; i < 7; i++) {
-        loop_init_window_col:
+#pragma HLS unroll factor=8
+
+ loop_init_window_col:
         for (int j = 0; j < 7; j++) {
-            window_buffer.insert_pixel(0, i, j);
+#pragma HLS unroll factor=8
+ window_buffer.insert_pixel(0, i, j);
             window.insert_pixel(0, i, j);
         }
     }
 
     loop_init_line:
     for (int j = 0 ; j < width; j++) {
-        VITIS_LOOP_141_1: for (int i = 0; i < 7; i++) {
-            line_buffer.val[i][j] = 0;
+
+#pragma HLS unroll factor=8
+ VITIS_LOOP_166_1: for (int i = 0; i < 7; i++) {
+#pragma HLS unroll factor=8
+ line_buffer.val[i][j] = 0;
         }
     }
 
     loop_blur:
-    for (int cnt = 0; cnt < (height+4)*width; cnt++) {
+#pragma HLS pipeline
+ VITIS_LOOP_174_2: for (int cnt = 0; cnt < (height+4)*width; cnt++) {
+
         int i = cnt / width;
         int j = cnt % width;
         if (i < height) {
@@ -38731,13 +38759,16 @@ void process_blur(
         line_buffer.insert_bottom_row(pixel_rd, j);
         window_buffer.shift_pixels_left();
         window.shift_pixels_left();
-        VITIS_LOOP_161_2: for (int k = 0; k < 7; k++) {
-            window_buffer.insert_pixel(line_buffer(k, j), k, 6);
-            if (j == 3) {
-                VITIS_LOOP_164_3: for (int jj = 0; jj < 3; jj++) {
+        VITIS_LOOP_189_3: for (int k = 0; k < 7; k++) {
+#pragma HLS unroll factor=8
+ window_buffer.insert_pixel(line_buffer(k, j), k, 6);
+            if (j == 3)
+#pragma HLS LOOP_MERGE
+ {
+                VITIS_LOOP_195_4: for (int jj = 0; jj < 3; jj++) {
                     window.insert_pixel(0, k, jj);
                 }
-                VITIS_LOOP_167_4: for (int jj = 3; jj < 7; jj++) {
+                VITIS_LOOP_198_5: for (int jj = 3; jj < 7; jj++) {
                     window.insert_pixel(window_buffer(k, jj), k, jj);
                 }
             } else if (j > 3) {
@@ -38748,8 +38779,9 @@ void process_blur(
         }
         if (read_idx > 3*width + 3 && write_idx < width*height) {
             acc = 0;
-            VITIS_LOOP_178_5: for (int i = 0; i < 7; i++) {
-                VITIS_LOOP_179_6: for (int j = 0; j < 7; j++) {
+#pragma HLS pipeline
+ VITIS_LOOP_210_6: for (int i = 0; i < 7; i++) {
+                VITIS_LOOP_211_7: for (int j = 0; j < 7; j++) {
                     acc += window(i, j)*kernel[i*7+j];
                 }
             }
@@ -38781,7 +38813,8 @@ void process_rBRIEF(
 
     loop_row:
     for (int i = 0; i < height; i++) {
-        loop_col:
+#pragma HLS unroll
+ loop_col:
         for (int j = 0; j < width; j++) {
             mask = mask_in.read();
             img_pixel = img_in.read();
@@ -38798,8 +38831,10 @@ void process_rBRIEF(
             blur_window.shift_pixels_left();
             mask_window.shift_pixels_left();
 
-            VITIS_LOOP_228_1: for (int k = 0; k < 37; k++) {
-                img_window.insert_pixel(img_line(k, j), k, 37 -1);
+
+            VITIS_LOOP_262_1: for (int k = 0; k < 37; k++) {
+#pragma HLS unroll factor=8
+ img_window.insert_pixel(img_line(k, j), k, 37 -1);
                 blur_window.insert_pixel(blur_line(k, j), k, 37 -1);
                 mask_window.insert_pixel(mask_line(k, j), k, 37 -1);
             }
@@ -38829,10 +38864,11 @@ void process_output(
     DescOut data;
     ap_uint<1> flag = 1;
     int cnt = 0;
-    VITIS_LOOP_259_1: while (flag == 1) {
+    VITIS_LOOP_294_1: while (flag == 1) {
         data = src.read();
         flag = data.valid;
         if (flag == 1) {
+
             dst_axi.data.range(16*2+8+256-1, 16+8+256) = data.x;
             dst_axi.data.range(16+8+256-1, 8+256) = data.y;
             dst_axi.data.range(8+256-1, 256) = data.response;
@@ -38898,7 +38934,7 @@ __attribute__((sdx_kernel("ORB_accel", 0))) int ORB_accel(
     int threshold
 ) {
 #pragma HLS TOP name=ORB_accel
-# 326 "src/ORB.cpp"
+# 362 "src/ORB.cpp"
 
 #pragma HLS interface axis port=src depth=80*60
 #pragma HLS interface axis port=dst depth=80*60
@@ -38924,8 +38960,10 @@ __attribute__((sdx_kernel("ORB_accel", 0))) int ORB_accel(
 
     ap_axiu<16*2+8+256, 1, 1, 1> dst_axi;
     int cnt = 0;
-    VITIS_LOOP_351_1: for (int val = 0; val < 256; val++) {
-        VITIS_LOOP_352_2: for (int i = 0; i < cntTree[255-val]; i++) {
+
+    VITIS_LOOP_388_1: for (int val = 0; val < 256; val++) {
+#pragma HLS unroll
+ VITIS_LOOP_390_2: for (int i = 0; i < cntTree[255-val]; i++) {
             if (cnt < nFeatures) {
                 dst_axi.data = idxTree[255-val][i];
                 dst_axi.keep = -1;

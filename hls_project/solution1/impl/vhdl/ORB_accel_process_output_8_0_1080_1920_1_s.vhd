@@ -108,18 +108,18 @@ attribute shreg_extract : string;
     signal cntTree_addr_reg_370 : STD_LOGIC_VECTOR (7 downto 0);
     signal addr_cmp_fu_252_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal addr_cmp_reg_376 : STD_LOGIC_VECTOR (0 downto 0);
-    signal trunc_ln269_fu_273_p1 : STD_LOGIC_VECTOR (14 downto 0);
-    signal trunc_ln269_reg_381 : STD_LOGIC_VECTOR (14 downto 0);
+    signal trunc_ln305_fu_273_p1 : STD_LOGIC_VECTOR (14 downto 0);
+    signal trunc_ln305_reg_381 : STD_LOGIC_VECTOR (14 downto 0);
     signal ap_block_state1 : BOOLEAN;
     signal ap_block_pp0_stage0_subdone : BOOLEAN;
     signal ap_condition_pp0_exit_iter0_state2 : STD_LOGIC;
     signal ap_enable_reg_pp0_iter1 : STD_LOGIC := '0';
     signal ap_enable_reg_pp0_iter2 : STD_LOGIC := '0';
     signal zext_ln534_fu_240_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln269_1_fu_298_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln305_1_fu_298_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal reuse_addr_reg_fu_90 : STD_LOGIC_VECTOR (63 downto 0);
     signal reuse_reg_fu_94 : STD_LOGIC_VECTOR (31 downto 0);
-    signal add_ln270_fu_277_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal add_ln306_fu_277_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal cnt_fu_98 : STD_LOGIC_VECTOR (31 downto 0);
     signal cnt_1_fu_302_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
@@ -158,7 +158,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mac_muladd_8ns_8ns_15ns_15_4_1_U1596 : component ORB_accel_mac_muladd_8ns_8ns_15ns_15_4_1
+    mac_muladd_8ns_8ns_15ns_15_4_1_U2489 : component ORB_accel_mac_muladd_8ns_8ns_15ns_15_4_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -171,7 +171,7 @@ begin
         reset => ap_rst,
         din0 => grp_fu_313_p0,
         din1 => grp_fu_313_p1,
-        din2 => trunc_ln269_reg_381,
+        din2 => trunc_ln305_reg_381,
         ce => grp_fu_313_ce,
         dout => grp_fu_313_p3);
 
@@ -313,7 +313,7 @@ begin
             if ((not(((ap_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                 reuse_reg_fu_94 <= ap_const_lv32_0;
             elsif (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1))) then 
-                reuse_reg_fu_94 <= add_ln270_fu_277_p2;
+                reuse_reg_fu_94 <= add_ln306_fu_277_p2;
             end if; 
         end if;
     end process;
@@ -338,7 +338,7 @@ begin
                 data_x_V_reg_345_pp0_iter1_reg <= data_x_V_reg_345;
                 data_y_V_reg_350 <= src_dout(47 downto 32);
                 data_y_V_reg_350_pp0_iter1_reg <= data_y_V_reg_350;
-                trunc_ln269_reg_381 <= trunc_ln269_fu_273_p1;
+                trunc_ln305_reg_381 <= trunc_ln305_fu_273_p1;
             end if;
         end if;
     end process;
@@ -377,7 +377,7 @@ begin
                 ap_NS_fsm <= "XXX";
         end case;
     end process;
-    add_ln270_fu_277_p2 <= std_logic_vector(unsigned(reuse_select_fu_266_p3) + unsigned(ap_const_lv32_1));
+    add_ln306_fu_277_p2 <= std_logic_vector(unsigned(reuse_select_fu_266_p3) + unsigned(ap_const_lv32_1));
     addr_cmp_fu_252_p2 <= "1" when (reuse_addr_reg_fu_90 = zext_ln534_fu_240_p1) else "0";
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(1);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
@@ -548,7 +548,7 @@ begin
     grp_fu_313_p0 <= grp_fu_313_p00(8 - 1 downto 0);
     grp_fu_313_p00 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(data_response_V_fu_220_p4),15));
     grp_fu_313_p1 <= ap_const_lv15_64(8 - 1 downto 0);
-    idxTree_address0 <= zext_ln269_1_fu_298_p1(15 - 1 downto 0);
+    idxTree_address0 <= zext_ln305_1_fu_298_p1(15 - 1 downto 0);
 
     idxTree_ce0_assign_proc : process(ap_enable_reg_pp0_iter3, ap_block_pp0_stage0_11001)
     begin
@@ -613,7 +613,7 @@ begin
         end if; 
     end process;
 
-    trunc_ln269_fu_273_p1 <= reuse_select_fu_266_p3(15 - 1 downto 0);
-    zext_ln269_1_fu_298_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_313_p3),64));
+    trunc_ln305_fu_273_p1 <= reuse_select_fu_266_p3(15 - 1 downto 0);
+    zext_ln305_1_fu_298_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_313_p3),64));
     zext_ln534_fu_240_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(data_response_V_fu_220_p4),64));
 end behav;

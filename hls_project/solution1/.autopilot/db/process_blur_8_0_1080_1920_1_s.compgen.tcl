@@ -171,7 +171,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 
 
 set id 86
-set name ORB_accel_mul_8ns_9ns_16_1_1
+set name ORB_accel_mul_8ns_10ns_17_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
@@ -179,9 +179,9 @@ set max_latency -1
 set registered_input 1
 set in0_width 8
 set in0_signed 0
-set in1_width 9
+set in1_width 10
 set in1_signed 0
-set out_width 16
+set out_width 17
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -237,8 +237,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 94
-set name ORB_accel_mul_8ns_10ns_17_1_1
+set id 89
+set name ORB_accel_mul_8ns_9ns_16_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
@@ -246,9 +246,9 @@ set max_latency -1
 set registered_input 1
 set in0_width 8
 set in0_signed 0
-set in1_width 10
+set in1_width 9
 set in1_signed 0
-set out_width 17
+set out_width 16
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \

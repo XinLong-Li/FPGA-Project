@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'process_ORB_8_0_1080_1920_1_s'" level="0">
-<item name = "Date">Wed Jan 17 16:58:32 2024
+<item name = "Date">Sun Jan 21 17:43:33 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.274 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.299 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,17 +31,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_process_rBRIEF_8_1080_1920_s_fu_364">process_rBRIEF_8_1080_1920_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_blur_8_0_1080_1920_1_s_fu_382">process_blur_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_fast_8_1080_1920_1_s_fu_393">process_fast_8_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_resize_8_0_1080_1920_1_s_fu_407">process_resize_8_0_1080_1920_1_s, 106, 2089421, 1.060 us, 20.894 ms, 106, 2089421, none</column>
-<column name="grp_process_nms_8_1080_1920_1_s_fu_419">process_nms_8_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_output_8_0_1080_1920_1_s_fu_433">process_output_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_input_8_0_1080_1920_1_s_fu_458">process_input_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_stream2xfMat_8_0_1080_1920_1_s_fu_479">process_stream2xfMat_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_process_xfMat2stream_8_0_1080_1920_1_s_fu_489">process_xfMat2stream_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
-<column name="call_ln509_process_ORB_8_0_1080_1920_1_entry57_fu_497">process_ORB_8_0_1080_1920_1_entry57, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
-<column name="call_ln508_process_ORB_8_0_1080_1920_1_Block_split1_proc_fu_518">process_ORB_8_0_1080_1920_1_Block_split1_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_process_rBRIEF_8_1080_1920_s_fu_360">process_rBRIEF_8_1080_1920_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_blur_8_0_1080_1920_1_s_fu_374">process_blur_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_fast_8_1080_1920_1_s_fu_385">process_fast_8_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_resize_8_0_1080_1920_1_s_fu_399">process_resize_8_0_1080_1920_1_s, 106, 2089421, 1.060 us, 20.894 ms, 106, 2089421, none</column>
+<column name="grp_process_nms_8_1080_1920_1_s_fu_411">process_nms_8_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_output_8_0_1080_1920_1_s_fu_425">process_output_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_input_8_0_1080_1920_1_s_fu_450">process_input_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_stream2xfMat_8_0_1080_1920_1_s_fu_471">process_stream2xfMat_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_process_xfMat2stream_8_0_1080_1920_1_s_fu_481">process_xfMat2stream_8_0_1080_1920_1_s, ?, ?, ?, ?, ?, ?, none</column>
+<column name="call_ln509_process_ORB_8_0_1080_1920_1_entry336_fu_489">process_ORB_8_0_1080_1920_1_entry336, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="call_ln508_process_ORB_8_0_1080_1920_1_Block_split1_proc_fu_510">process_ORB_8_0_1080_1920_1_Block_split1_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

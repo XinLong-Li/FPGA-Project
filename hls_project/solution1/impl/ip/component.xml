@@ -861,7 +861,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>385174f6</spirit:value>
+            <spirit:value>96f48d9c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -877,7 +877,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0bd3c0e4</spirit:value>
+            <spirit:value>e80ea8ac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -893,7 +893,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0e7fb0df</spirit:value>
+            <spirit:value>8544d1ff</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -909,7 +909,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e90b0634</spirit:value>
+            <spirit:value>d2fdfe48</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1614,6 +1614,34 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_12s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_13ns_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_14s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_15s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5s_14ns_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5s_14s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5s_15ns_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_cntTree.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -1635,6 +1663,14 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_descriptor_bit_pattern_31_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_descriptor_cordic_apfixed_circ_table_arctan_128_V.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_descriptor_cordic_apfixed_circ_table_arctan_128_V_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -1674,14 +1710,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_hls_deadlock_detection_unit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -1691,6 +1719,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_hls_deadlock_report_unit.vh</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_IC_Angle_31.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1710,7 +1742,19 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5s_18s_18_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5ns_11ns_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5ns_12ns_13_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5s_13s_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5s_15s_16_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1730,19 +1774,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_14s_17s_17s_18_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mul_8ns_8ns_15_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1754,7 +1790,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mul_9ns_5ns_13_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_mul_9s_5s_14_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mul_14s_5ns_17_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1782,7 +1826,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mux_376_8_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_mux_646_8_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1814,7 +1858,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_entry57.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_entry336.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1828,14 +1872,6 @@
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_img_line_val_V_0.v</spirit:name>
@@ -1942,6 +1978,41 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_12s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_13ns_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_14s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5ns_15s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5s_14ns_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5s_14s_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_ama_addmuladd_8ns_8ns_5s_15ns_15_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_cntTree.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
@@ -1967,6 +2038,15 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_descriptor_bit_pattern_31_rom.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_descriptor_cordic_apfixed_circ_table_arctan_128_V.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_descriptor_cordic_apfixed_circ_table_arctan_128_V_rom.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -2015,15 +2095,6 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_hls_deadlock_detection_unit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
@@ -2035,6 +2106,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_hls_deadlock_report_unit.vh</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_IC_Angle_31.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2058,7 +2134,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5s_18s_18_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5ns_11ns_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5ns_12ns_13_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5s_13s_14_4_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_8ns_5s_15s_16_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2083,22 +2174,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_mac_muladd_14s_17s_17s_18_4_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mul_8ns_8ns_15_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2113,7 +2194,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mul_9ns_5ns_13_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_mul_9s_5s_14_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/ORB_accel_mul_14s_5ns_17_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2148,7 +2239,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_mux_376_8_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_mux_646_8_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2188,7 +2279,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_entry57.v</spirit:name>
+        <spirit:name>hdl/verilog/ORB_accel_process_ORB_8_0_1080_1920_1_entry336.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2206,15 +2297,6 @@
         <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax_rom.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/ORB_accel_process_rBRIEF_8_1080_1920_s_img_line_val_V_0.v</spirit:name>
@@ -2349,6 +2431,34 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_12s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_13ns_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_14s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_15s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5s_14ns_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5s_14s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5s_15ns_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_cntTree.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -2362,6 +2472,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_descriptor_bit_pattern_31.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_descriptor_cordic_apfixed_circ_table_arctan_128_V.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2401,7 +2515,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_IC_Angle_31.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2417,7 +2531,19 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5s_18s_18_4_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5ns_11ns_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5ns_12ns_13_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5s_13s_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5s_15s_16_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2437,19 +2563,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_14s_17s_17s_18_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mul_8ns_8ns_15_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2461,7 +2579,15 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mul_9ns_5ns_13_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_mul_9s_5s_14_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mul_14s_5ns_17_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2489,7 +2615,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mux_376_8_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_mux_646_8_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2521,7 +2647,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_process_ORB_8_0_1080_1920_1_entry57.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_process_ORB_8_0_1080_1920_1_entry336.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2534,10 +2660,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_process_rBRIEF_8_1080_1920_s.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2635,13 +2757,48 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e6d07c9e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_9e3a8a10</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_am_addmul_11ns_4ns_11ns_23_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_12s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_13ns_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_14s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5ns_15s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5s_14ns_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5s_14s_15_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_ama_addmuladd_8ns_8ns_5s_15ns_15_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2662,6 +2819,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_descriptor_bit_pattern_31.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_descriptor_cordic_apfixed_circ_table_arctan_128_V.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2711,7 +2873,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_generic_atan2_20_20_s_circ_table_arctan_128_V56.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_IC_Angle_31.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2731,7 +2893,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5s_18s_18_4_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5ns_11ns_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5ns_12ns_13_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5s_13s_14_4_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_8ns_5s_15s_16_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2756,22 +2933,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_20s_4ns_20ns_20_4_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_20s_9ns_20ns_20_4_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_mac_muladd_14s_17s_17s_18_4_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_mac_mulsub_9s_5s_14ns_14_4_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mul_8ns_8ns_15_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2786,7 +2953,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mul_9ns_5ns_13_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_mul_9s_5s_14_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/ORB_accel_mul_14s_5ns_17_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2821,7 +2998,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_mux_376_8_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_mux_646_8_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2861,7 +3038,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_process_ORB_8_0_1080_1920_1_entry57.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/ORB_accel_process_ORB_8_0_1080_1920_1_entry336.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2877,11 +3054,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/ORB_accel_process_rBRIEF_8_1080_1920_s.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/ORB_accel_process_rBRIEF_8_1080_1920_s_IC_Angle_31_Window_37_37_ap_uint_8_umax.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3117,8 +3289,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Orb_accel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113387620</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-01-17T09:00:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2113393429</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-01-21T09:49:51Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3128,7 +3300,7 @@
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6fa1156d"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="4ed1b26c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ad89e8c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2b22b223"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="810624a9"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="383b71cc"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="e31daa7a"/>

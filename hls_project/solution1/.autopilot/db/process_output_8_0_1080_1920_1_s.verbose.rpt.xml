@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'process_output_8_0_1080_1920_1_s'" level="0">
-<item name = "Date">Wed Jan 17 16:59:41 2024
+<item name = "Date">Sun Jan 21 17:48:08 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_259_1">?, ?, 4, 1, 1, ?, yes</column>
+<column name="- VITIS_LOOP_294_1">?, ?, 4, 1, 1, ?, yes</column>
 </table>
 </item>
 </section>
@@ -66,7 +66,7 @@
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_8ns_8ns_15ns_15_4_1_U1596">mac_muladd_8ns_8ns_15ns_15_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_8ns_8ns_15ns_15_4_1_U2489">mac_muladd_8ns_8ns_15ns_15_4_1, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -79,7 +79,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln270_fu_277_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln306_fu_277_p2">+, 0, 0, 39, 32, 1</column>
 <column name="cnt_1_fu_302_p2">+, 0, 0, 39, 32, 1</column>
 <column name="addr_cmp_fu_252_p2">icmp, 0, 0, 29, 64, 64</column>
 <column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
@@ -121,7 +121,7 @@
 <column name="length_r_preg">32, 0, 32, 0</column>
 <column name="reuse_addr_reg_fu_90">64, 0, 64, 0</column>
 <column name="reuse_reg_fu_94">32, 0, 32, 0</column>
-<column name="trunc_ln269_reg_381">15, 0, 15, 0</column>
+<column name="trunc_ln305_reg_381">15, 0, 15, 0</column>
 <column name="data_descriptor_V_reg_360">64, 32, 256, 0</column>
 <column name="data_response_V_reg_355">64, 32, 8, 0</column>
 <column name="data_x_V_reg_345">64, 32, 16, 0</column>

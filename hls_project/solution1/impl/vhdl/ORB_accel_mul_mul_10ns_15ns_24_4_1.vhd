@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7 is
+entity ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19 is
 port (
     clk: in std_logic;
     rst: in std_logic;
@@ -14,7 +14,7 @@ port (
 
 end entity;
 
-architecture behav of ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7 is
+architecture behav of ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19 is
     signal a_cvt: unsigned(10 - 1 downto 0);
     signal b_cvt: unsigned(15 - 1 downto 0);
     signal p_cvt: unsigned(24 - 1 downto 0);
@@ -65,7 +65,7 @@ entity ORB_accel_mul_mul_10ns_15ns_24_4_1 is
 end entity;
 
 architecture arch of ORB_accel_mul_mul_10ns_15ns_24_4_1 is
-    component ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7 is
+    component ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19 is
         port (
             clk : IN STD_LOGIC;
             rst : IN STD_LOGIC;
@@ -78,7 +78,7 @@ architecture arch of ORB_accel_mul_mul_10ns_15ns_24_4_1 is
 
 
 begin
-    ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7_U :  component ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7
+    ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19_U :  component ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19
     port map (
         clk => clk,
         rst => reset,

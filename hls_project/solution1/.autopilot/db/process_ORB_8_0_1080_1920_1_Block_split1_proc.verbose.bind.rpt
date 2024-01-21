@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'process_ORB_8_0_1080_1920_1_Block_split1_proc'
 ================================================================
-* Date:           Wed Jan 17 16:57:33 2024
+* Date:           Sun Jan 21 17:42:07 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        hls_project
@@ -88,14 +88,14 @@ ST_1 : Operation 11 [1/1] (1.83ns)   --->   "%width_read = read i11 @_ssdm_op_Re
 ST_1 : Operation 12 [1/1] (1.83ns)   --->   "%height_new_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %height_new" [vitis_library_vision_L1/include\common/xf_structs.hpp:508]   --->   Operation 12 'read' 'height_new_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
 ST_1 : Operation 13 [1/1] (1.83ns)   --->   "%width_new_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %width_new" [vitis_library_vision_L1/include\common/xf_structs.hpp:509]   --->   Operation 13 'read' 'width_new_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %height_new_out, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (1.86ns)   --->   "%write_ln286 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %height_new_out, i11 %height_new_read" [src/ORB.cpp:286]   --->   Operation 15 'write' 'write_ln286' <Predicate = true> <Delay = 1.86> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 5> <FIFO>
+ST_1 : Operation 15 [1/1] (1.86ns)   --->   "%write_ln322 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %height_new_out, i11 %height_new_read" [src/ORB.cpp:322]   --->   Operation 15 'write' 'write_ln322' <Predicate = true> <Delay = 1.86> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 5> <FIFO>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %width_new_out, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (1.86ns)   --->   "%write_ln286 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %width_new_out, i11 %width_new_read" [src/ORB.cpp:286]   --->   Operation 17 'write' 'write_ln286' <Predicate = true> <Delay = 1.86> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 5> <FIFO>
+ST_1 : Operation 17 [1/1] (1.86ns)   --->   "%write_ln322 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %width_new_out, i11 %width_new_read" [src/ORB.cpp:322]   --->   Operation 17 'write' 'write_ln322' <Predicate = true> <Delay = 1.86> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 5> <FIFO>
 ST_1 : Operation 18 [1/1] (1.83ns)   --->   "%write_ln508 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %img_mat_rows_out, i11 %height_read" [vitis_library_vision_L1/include\common/xf_structs.hpp:508]   --->   Operation 18 'write' 'write_ln508' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
 ST_1 : Operation 19 [1/1] (1.83ns)   --->   "%write_ln509 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %img_mat_cols_out, i11 %width_read" [vitis_library_vision_L1/include\common/xf_structs.hpp:509]   --->   Operation 19 'write' 'write_ln509' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
 ST_1 : Operation 20 [1/1] (1.83ns)   --->   "%write_ln508 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %resized_mat_rows_out, i11 %height_new_read" [vitis_library_vision_L1/include\common/xf_structs.hpp:508]   --->   Operation 20 'write' 'write_ln508' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 3> <FIFO>
 ST_1 : Operation 21 [1/1] (1.83ns)   --->   "%write_ln509 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %resized_mat_cols_out, i11 %width_new_read" [vitis_library_vision_L1/include\common/xf_structs.hpp:509]   --->   Operation 21 'write' 'write_ln509' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 3> <FIFO>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln286 = ret" [src/ORB.cpp:286]   --->   Operation 22 'ret' 'ret_ln286' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln322 = ret" [src/ORB.cpp:322]   --->   Operation 22 'ret' 'ret_ln322' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -138,14 +138,14 @@ width_read        (read         ) [ 00]
 height_new_read   (read         ) [ 00]
 width_new_read    (read         ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
-write_ln286       (write        ) [ 00]
+write_ln322       (write        ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
-write_ln286       (write        ) [ 00]
+write_ln322       (write        ) [ 00]
 write_ln508       (write        ) [ 00]
 write_ln509       (write        ) [ 00]
 write_ln508       (write        ) [ 00]
 write_ln509       (write        ) [ 00]
-ret_ln286         (ret          ) [ 00]
+ret_ln322         (ret          ) [ 00]
 </LifeTime>
 
 <model>
@@ -370,7 +370,7 @@ ret_ln286         (ret          ) [ 00]
 </bind>
 </comp>
 
-<comp id="62" class="1004" name="write_ln286_write_fu_62">
+<comp id="62" class="1004" name="write_ln322_write_fu_62">
 <pin_list>
 <pin id="63" dir="0" index="0" bw="0" slack="0"/>
 <pin id="64" dir="0" index="1" bw="11" slack="0"/>
@@ -379,11 +379,11 @@ ret_ln286         (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln286/1 "/>
+<opset="write_ln322/1 "/>
 </bind>
 </comp>
 
-<comp id="70" class="1004" name="write_ln286_write_fu_70">
+<comp id="70" class="1004" name="write_ln322_write_fu_70">
 <pin_list>
 <pin id="71" dir="0" index="0" bw="0" slack="0"/>
 <pin id="72" dir="0" index="1" bw="11" slack="0"/>
@@ -392,7 +392,7 @@ ret_ln286         (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln286/1 "/>
+<opset="write_ln322/1 "/>
 </bind>
 </comp>
 
@@ -538,8 +538,8 @@ ret_ln286         (ret          ) [ 00]
 |          | height_new_read_read_fu_50 |
 |          |  width_new_read_read_fu_56 |
 |----------|----------------------------|
-|          |   write_ln286_write_fu_62  |
-|          |   write_ln286_write_fu_70  |
+|          |   write_ln322_write_fu_62  |
+|          |   write_ln322_write_fu_70  |
 |   write  |   write_ln508_write_fu_78  |
 |          |   write_ln509_write_fu_86  |
 |          |   write_ln508_write_fu_94  |

@@ -3,7 +3,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module ORB_accel_cntTree_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
+module ORB_accel_cntTree_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 32;
 parameter AWIDTH = 8;
@@ -16,6 +16,8 @@ input we0;
 output reg[DWIDTH-1:0] q0;
 input[AWIDTH-1:0] addr1;
 input ce1;
+input[DWIDTH-1:0] d1;
+input we1;
 output reg[DWIDTH-1:0] q1;
 input clk;
 
@@ -40,6 +42,8 @@ end
 always @(posedge clk)  
 begin 
     if (ce1) begin
+        if (we1) 
+            ram[addr1] <= d1; 
         q1 <= ram[addr1];
     end
 end
@@ -58,6 +62,8 @@ module ORB_accel_cntTree(
     q0,
     address1,
     ce1,
+    we1,
+    d1,
     q1);
 
 parameter DataWidth = 32'd32;
@@ -72,6 +78,8 @@ input[DataWidth - 1:0] d0;
 output[DataWidth - 1:0] q0;
 input[AddressWidth - 1:0] address1;
 input ce1;
+input we1;
+input[DataWidth - 1:0] d1;
 output[DataWidth - 1:0] q1;
 
 
@@ -85,6 +93,8 @@ ORB_accel_cntTree_ram ORB_accel_cntTree_ram_U(
     .q0( q0 ),
     .addr1( address1 ),
     .ce1( ce1 ),
+    .we1( we1 ),
+    .d1( d1 ),
     .q1( q1 ));
 
 endmodule

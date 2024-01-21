@@ -136,7 +136,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "length_r", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "cntTree", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "idxTree", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_8ns_8ns_15ns_15_4_1_U1596", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_8ns_8ns_15ns_15_4_1_U2489", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

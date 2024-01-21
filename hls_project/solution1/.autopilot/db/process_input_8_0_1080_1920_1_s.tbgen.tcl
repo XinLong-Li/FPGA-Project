@@ -129,13 +129,13 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	process_input_8_0_1080_1920_1_s {
 		dst {Type O LastRead -1 FirstWrite 5}
-		src_V_data_V {Type I LastRead 4 FirstWrite -1}
-		src_V_keep_V {Type I LastRead 4 FirstWrite -1}
-		src_V_strb_V {Type I LastRead 4 FirstWrite -1}
-		src_V_user_V {Type I LastRead 4 FirstWrite -1}
-		src_V_last_V {Type I LastRead 4 FirstWrite -1}
-		src_V_id_V {Type I LastRead 4 FirstWrite -1}
-		src_V_dest_V {Type I LastRead 4 FirstWrite -1}
+		src_V_data_V {Type I LastRead 11 FirstWrite -1}
+		src_V_keep_V {Type I LastRead 11 FirstWrite -1}
+		src_V_strb_V {Type I LastRead 11 FirstWrite -1}
+		src_V_user_V {Type I LastRead 11 FirstWrite -1}
+		src_V_last_V {Type I LastRead 11 FirstWrite -1}
+		src_V_id_V {Type I LastRead 11 FirstWrite -1}
+		src_V_dest_V {Type I LastRead 11 FirstWrite -1}
 		height {Type I LastRead 0 FirstWrite -1}
 		width {Type I LastRead 0 FirstWrite -1}}}
 

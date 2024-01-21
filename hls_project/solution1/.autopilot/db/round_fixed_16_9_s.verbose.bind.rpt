@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'round_fixed_16_9_s'
 ================================================================
-* Date:           Wed Jan 17 16:57:54 2024
+* Date:           Sun Jan 21 17:42:48 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        hls_project
@@ -81,7 +81,7 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 2.89>
 ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%x_read = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %x"   --->   Operation 2 'read' 'x_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns) (grouped into LUT with out node ret_V)   --->   "%sext_ln201 = sext i14 %x_read" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_round_copysign_apfixed.h:201]   --->   Operation 3 'sext' 'sext_ln201' <Predicate = (!p_Result_s)> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specpipeline_ln201 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_26" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_round_copysign_apfixed.h:201]   --->   Operation 4 'specpipeline' 'specpipeline_ln201' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specpipeline_ln201 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_24" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_round_copysign_apfixed.h:201]   --->   Operation 4 'specpipeline' 'specpipeline_ln201' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.83ns)   --->   "%p_Val2_s = sub i14 0, i14 %x_read"   --->   Operation 5 'sub' 'p_Val2_s' <Predicate = (p_Result_s)> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 6 [1/1] (0.00ns) (grouped into LUT with out node ret_V)   --->   "%sext_ln104 = sext i14 %p_Val2_s"   --->   Operation 6 'sext' 'sext_ln104' <Predicate = (p_Result_s)> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns) (grouped into LUT with out node ret_V)   --->   "%p_Result_2 = bitset i16 @_ssdm_op_BitSet.i16.i16.i32.i1, i16 %sext_ln104, i32 15, i1 0"   --->   Operation 7 'bitset' 'p_Result_2' <Predicate = (p_Result_s)> <Delay = 0.00>
@@ -184,7 +184,7 @@ ret_ln218          (ret         ) [ 00]
 <pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </bind>
 </comp>
 

@@ -31,7 +31,7 @@
               <opType/>
               <implIndex/>
               <coreName>FIFO_SRL</coreName>
-              <coreId>1735355503</coreId>
+              <coreId>1819242088</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -64,7 +64,7 @@
               <opType/>
               <implIndex/>
               <coreName>FIFO_SRL</coreName>
-              <coreId>1735355503</coreId>
+              <coreId>793988168</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -97,7 +97,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1764700492</coreId>
+              <coreId>793988168</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -130,7 +130,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1764700492</coreId>
+              <coreId>793988168</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -163,7 +163,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1935762015</coreId>
+              <coreId>1735355503</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -196,7 +196,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>891905380</coreId>
+              <coreId>1735355503</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -313,7 +313,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1885415456</coreId>
+              <coreId>1834970975</coreId>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -508,7 +508,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1869438833</coreId>
+              <coreId>1735355503</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>

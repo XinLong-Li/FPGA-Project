@@ -429,7 +429,7 @@ attribute shreg_extract : string;
     signal rhs_2_fu_1232_p3 : STD_LOGIC_VECTOR (23 downto 0);
     signal tmp_V_4_cast7_fu_1249_p1 : STD_LOGIC_VECTOR (17 downto 0);
     signal not_cmp_i_i176_fu_1253_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal empty_75_fu_1245_p1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal empty_73_fu_1245_p1 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln428_fu_1258_p1 : STD_LOGIC_VECTOR (10 downto 0);
     signal idx_nxt_fu_1262_p2 : STD_LOGIC_VECTOR (10 downto 0);
     signal ret_V_6_fu_1192_p2 : STD_LOGIC_VECTOR (23 downto 0);
@@ -1755,7 +1755,7 @@ begin
     cmp89_fu_897_p2 <= "0" when (read_rows_count_reg_433 = p_read_cast9_reg_1685) else "1";
     cmp_i_i235_i_fu_960_p2 <= "1" when (signed(indexy_pre_comp_V_reg_577) > signed(tmp_1_cast_reg_1814)) else "0";
     conv_i_i_i322_i_cast_fu_822_p4 <= grp_xfUDivResize_fu_566_ap_return(31 downto 10);
-    empty_75_fu_1245_p1 <= ret_V_17_fu_1221_p3(11 - 1 downto 0);
+    empty_73_fu_1245_p1 <= ret_V_17_fu_1221_p3(11 - 1 downto 0);
     empty_fu_861_p2 <= "1" when (unsigned(p_read1) > unsigned(p_read3)) else "0";
     first_row_index_2_fu_1570_p3 <= 
         ap_const_lv32_0 when (icmp_ln522_fu_1564_p2(0) = '1') else 
@@ -1890,7 +1890,7 @@ begin
     icmp_ln870_fu_1507_p2 <= "1" when (zext_ln870_fu_1503_p1 = op2_assign_reg_1861) else "0";
     icmp_ln882_1_fu_1016_p2 <= "1" when (signed(zext_ln882_1_fu_1012_p1) < signed(op2_assign_fu_902_p2)) else "0";
     icmp_ln882_fu_1553_p2 <= "1" when (signed(zext_ln882_fu_1549_p1) < signed(op2_assign_reg_1861)) else "0";
-    idx_nxt_fu_1262_p2 <= std_logic_vector(unsigned(empty_75_fu_1245_p1) + unsigned(zext_ln428_fu_1258_p1));
+    idx_nxt_fu_1262_p2 <= std_logic_vector(unsigned(empty_73_fu_1245_p1) + unsigned(zext_ln428_fu_1258_p1));
 
     img_mat_429_blk_n_assign_proc : process(img_mat_429_empty_n, ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0, icmp_ln332_reg_1717, ap_CS_fsm_pp1_stage0, ap_enable_reg_pp1_iter1, ap_block_pp1_stage0, icmp_ln389_reg_1911, cmp89_reg_1854, and_ln406_reg_1925)
     begin

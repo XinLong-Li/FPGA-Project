@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jan 17 17:03:54 2024
-# Process ID: 18264
+# Start of session at: Sun Jan 21 17:52:17 2024
+# Process ID: 7628
 # Current directory: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/ORB_accel/xsim_script.tcl}
 # Log file: C:/Users/lxl/Documents/vitis_hls_ws/Project/Project/hls_project/solution1/sim/verilog/xsim.log

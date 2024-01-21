@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'descriptor'" level="0">
-<item name = "Date">Wed Jan 17 16:57:56 2024
+<item name = "Date">Sun Jan 21 17:42:54 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -24,23 +24,51 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">284, 284, 2.840 us, 2.840 us, 284, 284, none</column>
+<column name="">60, 60, 0.600 us, 0.600 us, 60, 60, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="p_Val2_6_round_fixed_16_9_s_fu_11233">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="p_Val2_8_round_fixed_16_9_s_fu_11238">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="p_Val2_s_round_fixed_16_9_s_fu_11243">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="p_Val2_7_round_fixed_16_9_s_fu_11248">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_6_round_fixed_16_9_s_fu_11641">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_8_round_fixed_16_9_s_fu_11646">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_12_round_fixed_16_9_s_fu_11651">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_14_round_fixed_16_9_s_fu_11656">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_17_round_fixed_16_9_s_fu_11661">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_19_round_fixed_16_9_s_fu_11666">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_22_round_fixed_16_9_s_fu_11671">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_24_round_fixed_16_9_s_fu_11676">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_27_round_fixed_16_9_s_fu_11681">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_29_round_fixed_16_9_s_fu_11686">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_32_round_fixed_16_9_s_fu_11691">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_34_round_fixed_16_9_s_fu_11696">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_37_round_fixed_16_9_s_fu_11701">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_39_round_fixed_16_9_s_fu_11706">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_42_round_fixed_16_9_s_fu_11711">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_44_round_fixed_16_9_s_fu_11716">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_s_round_fixed_16_9_s_fu_11721">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_7_round_fixed_16_9_s_fu_11726">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_11_round_fixed_16_9_s_fu_11731">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_13_round_fixed_16_9_s_fu_11736">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_16_round_fixed_16_9_s_fu_11741">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_18_round_fixed_16_9_s_fu_11746">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_21_round_fixed_16_9_s_fu_11751">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_23_round_fixed_16_9_s_fu_11756">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_26_round_fixed_16_9_s_fu_11761">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_28_round_fixed_16_9_s_fu_11766">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_31_round_fixed_16_9_s_fu_11771">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_33_round_fixed_16_9_s_fu_11776">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_36_round_fixed_16_9_s_fu_11781">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_38_round_fixed_16_9_s_fu_11786">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_41_round_fixed_16_9_s_fu_11791">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="p_Val2_43_round_fixed_16_9_s_fu_11796">round_fixed_16_9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- VITIS_LOOP_87_1">12, 12, 2, 1, 1, 12, yes</column>
-<column name="- loop_descriptor">262, 262, 8, 1, 1, 256, yes</column>
+<column name="- loop_descriptor">38, 38, 8, 1, 1, 32, yes</column>
 </table>
 </item>
 </section>

@@ -158,8 +158,8 @@ wire   [8:0] sub_i_fu_596_p2;
 reg   [8:0] sub_i_reg_2644;
 wire   [0:0] cmp1633_i_fu_602_p2;
 reg   [0:0] cmp1633_i_reg_2664;
-wire   [10:0] i_9_fu_613_p2;
-reg   [10:0] i_9_reg_2668;
+wire   [10:0] i_5_fu_613_p2;
+reg   [10:0] i_5_reg_2668;
 wire    ap_CS_fsm_state2;
 wire   [0:0] icmp_ln70_fu_622_p2;
 wire   [0:0] cmp7_i_fu_627_p2;
@@ -1024,7 +1024,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state13)) begin
-        i_reg_474 <= i_9_reg_2668;
+        i_reg_474 <= i_5_reg_2668;
     end else if ((~((width_out_full_n == 1'b0) | (height_out_full_n == 1'b0) | (p_threshold_empty_n == 1'b0) | (width_empty_n == 1'b0) | (height_empty_n == 1'b0) | (ap_done_reg == 1'b1) | (real_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
         i_reg_474 <= 11'd0;
     end
@@ -1236,7 +1236,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_9_reg_2668 <= i_9_fu_613_p2;
+        i_5_reg_2668 <= i_5_fu_613_p2;
     end
 end
 
@@ -2104,7 +2104,7 @@ assign cnt_7_fu_670_p2 = (cnt_6_reg_496 + 32'd1);
 
 assign height_out_din = height_dout;
 
-assign i_9_fu_613_p2 = (i_reg_474 + 11'd1);
+assign i_5_fu_613_p2 = (i_reg_474 + 11'd1);
 
 assign icmp_ln113_10_fu_1174_p2 = (($signed(ret_20_fu_870_p2) > $signed(p_threshold_cast_i_reg_2624)) ? 1'b1 : 1'b0);
 

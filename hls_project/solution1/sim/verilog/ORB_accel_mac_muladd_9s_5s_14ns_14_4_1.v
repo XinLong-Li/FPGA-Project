@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_9(
+(* use_dsp = "yes" *) module ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_21(
     input clk,
     input rst,
     input ce,
@@ -68,7 +68,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_9 ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_9_U(
+ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_21 ORB_accel_mac_muladd_9s_5s_14ns_14_4_1_DSP48_21_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

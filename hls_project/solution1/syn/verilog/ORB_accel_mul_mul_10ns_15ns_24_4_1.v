@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-  module ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7(clk, rst, ce, a, b, p);
+  module ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19(clk, rst, ce, a, b, p);
 input clk;
 input rst;
 input ce;
@@ -51,7 +51,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7 ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_7_U(
+ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19 ORB_accel_mul_mul_10ns_15ns_24_4_1_DSP48_19_U(
     .clk( clk ),
     .rst( reset ),
     .ce( ce ),

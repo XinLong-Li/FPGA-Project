@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'process_rBRIEF_8_1080_1920_s'" level="0">
-<item name = "Date">Wed Jan 17 16:58:09 2024
+<item name = "Date">Sun Jan 21 17:42:59 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.133 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.299 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -35,11 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_row_loop_col">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_228_1">37, 37, 1, 1, 1, 37, yes</column>
-<column name=" + VITIS_LOOP_12_1">33, 33, 4, 1, 1, 31, yes</column>
-<column name=" + VITIS_LOOP_15_2">?, ?, ?, -, -, 15, no</column>
-<column name="  ++ VITIS_LOOP_18_3">?, ?, 4, 1, 1, ?, yes</column>
+<column name="- loop_row">?, ?, ?, -, -, ?, no</column>
+<column name=" + loop_col">?, ?, 8 ~ 90, -, -, ?, no</column>
+<column name="  ++ VITIS_LOOP_262_1">4, 4, 1, -, -, 4, no</column>
 </table>
 </item>
 </section>

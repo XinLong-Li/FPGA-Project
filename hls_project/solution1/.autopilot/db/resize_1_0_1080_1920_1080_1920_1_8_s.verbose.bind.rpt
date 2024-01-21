@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'resize_1_0_1080_1920_1080_1920_1_8_s'
 ================================================================
-* Date:           Wed Jan 17 16:57:40 2024
+* Date:           Sun Jan 21 17:42:16 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        hls_project
@@ -88,8 +88,8 @@ ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_read_7 = read i11 @_ssdm_op_Read.
 ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln68 = call void @resizeNNBilinear<0, 1080, 1920, 1, 1080, 1920, 1, 8>, i8 %img_mat_429, i8 %resized_mat_430, i11 %p_read_7, i11 %p_read15, i11 %p_read_6, i11 %p_read_5" [vitis_library_vision_L1/include\imgproc/xf_resize.hpp:68]   --->   Operation 7 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_mat_429, void @empty_28, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %resized_mat_430, void @empty_28, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_mat_429, void @empty_1, i32 0, i32 0, void @empty_24, i32 0, i32 0, void @empty_24, void @empty_24, void @empty_24, i32 0, i32 0, i32 0, i32 0, void @empty_24, void @empty_24"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %resized_mat_430, void @empty_1, i32 0, i32 0, void @empty_24, i32 0, i32 0, void @empty_24, void @empty_24, void @empty_24, i32 0, i32 0, i32 0, i32 0, void @empty_24, void @empty_24"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln68 = call void @resizeNNBilinear<0, 1080, 1920, 1, 1080, 1920, 1, 8>, i8 %img_mat_429, i8 %resized_mat_430, i11 %p_read_7, i11 %p_read15, i11 %p_read_6, i11 %p_read_5" [vitis_library_vision_L1/include\imgproc/xf_resize.hpp:68]   --->   Operation 10 'call' 'call_ln68' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%ret_ln71 = ret" [vitis_library_vision_L1/include\imgproc/xf_resize.hpp:71]   --->   Operation 11 'ret' 'ret_ln71' <Predicate = true> <Delay = 0.00>
 
@@ -216,7 +216,7 @@ ret_ln71          (ret          ) [ 000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
@@ -234,7 +234,7 @@ ret_ln71          (ret          ) [ 000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </bind>
 </comp>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1705482724">
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1705831055">
   <File Type="BITSTR-BMM" Name="ORB_accel_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="ORB_accel_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="ORB_accel_wrapper_timing_summary_init.rpt"/>
@@ -120,14 +120,14 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_rst_ps8_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ORB_accel_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_ORB_accel_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_rst_ps8_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axis_dwidth_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ORB_accel_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_ORB_accel_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ORB_accel_axi_smc_0"/>
 </GenRun>

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Wed Jan 17 17:16:19 2024
+// Date        : Sun Jan 21 18:01:19 2024
 // Host        : LXL-MAGIC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/lxl/Documents/vitis_hls_ws/Project/Project/vivado_project/ORB_accel.gen/sources_1/bd/ORB_accel/ip/ORB_accel_axis_dwidth_converter_0_0/ORB_accel_axis_dwidth_converter_0_0_sim_netlist.v

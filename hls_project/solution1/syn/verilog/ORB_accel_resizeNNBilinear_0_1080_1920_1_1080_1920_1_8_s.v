@@ -395,7 +395,7 @@ wire   [1:0] trunc_ln728_1_fu_1228_p1;
 wire   [23:0] rhs_2_fu_1232_p3;
 wire   [17:0] tmp_V_4_cast7_fu_1249_p1;
 wire   [0:0] not_cmp_i_i176_fu_1253_p2;
-wire   [10:0] empty_75_fu_1245_p1;
+wire   [10:0] empty_73_fu_1245_p1;
 wire   [10:0] zext_ln428_fu_1258_p1;
 wire   [10:0] idx_nxt_fu_1262_p2;
 wire   [23:0] ret_V_6_fu_1192_p2;
@@ -1738,7 +1738,7 @@ assign cmp_i_i235_i_fu_960_p2 = (($signed(indexy_pre_comp_V_reg_577) > $signed(t
 
 assign conv_i_i_i322_i_cast_fu_822_p4 = {{grp_xfUDivResize_fu_566_ap_return[31:10]}};
 
-assign empty_75_fu_1245_p1 = ret_V_17_fu_1221_p3[10:0];
+assign empty_73_fu_1245_p1 = ret_V_17_fu_1221_p3[10:0];
 
 assign empty_fu_861_p2 = ((p_read1 > p_read3) ? 1'b1 : 1'b0);
 
@@ -1818,7 +1818,7 @@ assign icmp_ln882_1_fu_1016_p2 = (($signed(zext_ln882_1_fu_1012_p1) < $signed(op
 
 assign icmp_ln882_fu_1553_p2 = (($signed(zext_ln882_fu_1549_p1) < $signed(op2_assign_reg_1861)) ? 1'b1 : 1'b0);
 
-assign idx_nxt_fu_1262_p2 = (empty_75_fu_1245_p1 + zext_ln428_fu_1258_p1);
+assign idx_nxt_fu_1262_p2 = (empty_73_fu_1245_p1 + zext_ln428_fu_1258_p1);
 
 assign indexx_pre_V_2_fu_849_p3 = {{tmp_V_fu_793_p2}, {22'd0}};
 

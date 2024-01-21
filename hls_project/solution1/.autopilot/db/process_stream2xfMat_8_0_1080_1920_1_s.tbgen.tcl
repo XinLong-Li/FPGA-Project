@@ -120,7 +120,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	process_stream2xfMat_8_0_1080_1920_1_s {
-		img31 {Type I LastRead 5 FirstWrite -1}
+		img31 {Type I LastRead 12 FirstWrite -1}
 		img_mat_429 {Type O LastRead -1 FirstWrite 5}
 		dst_rows {Type I LastRead 0 FirstWrite -1}
 		dst_cols {Type I LastRead 0 FirstWrite -1}

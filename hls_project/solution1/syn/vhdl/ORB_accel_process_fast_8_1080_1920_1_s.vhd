@@ -147,8 +147,8 @@ attribute shreg_extract : string;
     signal sub_i_reg_2644 : STD_LOGIC_VECTOR (8 downto 0);
     signal cmp1633_i_fu_602_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal cmp1633_i_reg_2664 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_9_fu_613_p2 : STD_LOGIC_VECTOR (10 downto 0);
-    signal i_9_reg_2668 : STD_LOGIC_VECTOR (10 downto 0);
+    signal i_5_fu_613_p2 : STD_LOGIC_VECTOR (10 downto 0);
+    signal i_5_reg_2668 : STD_LOGIC_VECTOR (10 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal icmp_ln70_fu_622_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -1121,7 +1121,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-                i_reg_474 <= i_9_reg_2668;
+                i_reg_474 <= i_5_reg_2668;
             elsif ((not(((width_out_full_n = ap_const_logic_0) or (height_out_full_n = ap_const_logic_0) or (p_threshold_empty_n = ap_const_logic_0) or (width_empty_n = ap_const_logic_0) or (height_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                 i_reg_474 <= ap_const_lv11_0;
             end if; 
@@ -1369,7 +1369,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                i_9_reg_2668 <= i_9_fu_613_p2;
+                i_5_reg_2668 <= i_5_fu_613_p2;
             end if;
         end if;
     end process;
@@ -1998,7 +1998,7 @@ begin
         end if; 
     end process;
 
-    i_9_fu_613_p2 <= std_logic_vector(unsigned(i_reg_474) + unsigned(ap_const_lv11_1));
+    i_5_fu_613_p2 <= std_logic_vector(unsigned(i_reg_474) + unsigned(ap_const_lv11_1));
     icmp_ln113_10_fu_1174_p2 <= "1" when (signed(ret_20_fu_870_p2) > signed(p_threshold_cast_i_reg_2624)) else "0";
     icmp_ln113_11_fu_1676_p2 <= "1" when (signed(ret_21_reg_2825) > signed(p_threshold_cast_i_reg_2624)) else "0";
     icmp_ln113_12_fu_1706_p2 <= "1" when (signed(ret_22_fu_1612_p2) > signed(p_threshold_cast_i_reg_2624)) else "0";

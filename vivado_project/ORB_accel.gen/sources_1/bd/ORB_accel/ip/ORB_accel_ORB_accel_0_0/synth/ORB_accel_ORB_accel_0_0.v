@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:ORB_accel:1.0
-// IP Revision: 2113387620
+// IP Revision: 2113393429
 
 (* X_CORE_INFO = "ORB_accel,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "ORB_accel_ORB_accel_0_0,ORB_accel,{}" *)
-(* CORE_GENERATION_INFO = "ORB_accel_ORB_accel_0_0,ORB_accel,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=ORB_accel,x_ipVersion=1.0,x_ipCoreRevision=2113387620,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=6,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "ORB_accel_ORB_accel_0_0,ORB_accel,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=ORB_accel,x_ipVersion=1.0,x_ipCoreRevision=2113393429,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=6,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module ORB_accel_ORB_accel_0_0 (

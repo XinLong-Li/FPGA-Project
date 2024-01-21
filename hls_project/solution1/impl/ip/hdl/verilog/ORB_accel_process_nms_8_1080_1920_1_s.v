@@ -151,8 +151,8 @@ wire   [31:0] add_cast_i_fu_292_p1;
 reg   [31:0] add_cast_i_reg_679;
 wire   [0:0] cmp1242_i_fu_296_p2;
 reg   [0:0] cmp1242_i_reg_684;
-wire   [10:0] i_7_fu_307_p2;
-reg   [10:0] i_7_reg_688;
+wire   [10:0] i_4_fu_307_p2;
+reg   [10:0] i_4_reg_688;
 wire    ap_CS_fsm_state2;
 wire   [0:0] icmp_ln176_fu_316_p2;
 wire   [0:0] icmp_ln191_fu_331_p2;
@@ -209,7 +209,7 @@ wire   [7:0] mask_new_fu_557_p3;
 reg    ap_block_pp1_stage0_01001;
 wire   [11:0] width_cast_i_fu_282_p1;
 wire   [9:0] tmp_fu_321_p4;
-wire   [9:0] tmp_19_fu_359_p4;
+wire   [9:0] tmp_21_fu_359_p4;
 wire   [0:0] icmp_ln874_fu_399_p2;
 wire   [0:0] or_ln193_1_fu_405_p2;
 wire   [0:0] or_ln193_fu_410_p2;
@@ -397,7 +397,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        i_reg_236 <= i_7_reg_688;
+        i_reg_236 <= i_4_reg_688;
     end else if ((~((width_out_full_n == 1'b0) | (height_out_full_n == 1'b0) | (width_empty_n == 1'b0) | (height_empty_n == 1'b0) | (ap_done_reg == 1'b1) | (real_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
         i_reg_236 <= 11'd0;
     end
@@ -432,7 +432,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        i_7_reg_688 <= i_7_fu_307_p2;
+        i_4_reg_688 <= i_4_fu_307_p2;
     end
 end
 
@@ -955,7 +955,7 @@ assign cnt_4_fu_375_p2 = (cnt_3_reg_258 + 32'd1);
 
 assign height_out_din = height_dout;
 
-assign i_7_fu_307_p2 = (i_reg_236 + 11'd1);
+assign i_4_fu_307_p2 = (i_reg_236 + 11'd1);
 
 assign icmp_ln176_fu_316_p2 = ((i_reg_236 == height_read_reg_659) ? 1'b1 : 1'b0);
 
@@ -963,7 +963,7 @@ assign icmp_ln178_fu_343_p2 = ((j_reg_247 == width_read_reg_664) ? 1'b1 : 1'b0);
 
 assign icmp_ln190_fu_354_p2 = (($signed(cnt_3_reg_258) < $signed(add_cast_i_reg_679)) ? 1'b1 : 1'b0);
 
-assign icmp_ln191_1_fu_369_p2 = ((tmp_19_fu_359_p4 == 10'd0) ? 1'b1 : 1'b0);
+assign icmp_ln191_1_fu_369_p2 = ((tmp_21_fu_359_p4 == 10'd0) ? 1'b1 : 1'b0);
 
 assign icmp_ln191_fu_331_p2 = ((tmp_fu_321_p4 == 10'd0) ? 1'b1 : 1'b0);
 
@@ -1017,7 +1017,7 @@ assign select_ln195_fu_519_p3 = ((and_ln195_3_fu_513_p2[0:0] == 1'b1) ? select_l
 
 assign start_out = real_start;
 
-assign tmp_19_fu_359_p4 = {{j_reg_247[10:1]}};
+assign tmp_21_fu_359_p4 = {{j_reg_247[10:1]}};
 
 assign tmp_fu_321_p4 = {{i_reg_236[10:1]}};
 

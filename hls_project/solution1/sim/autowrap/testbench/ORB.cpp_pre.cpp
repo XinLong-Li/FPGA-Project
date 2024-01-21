@@ -95253,12 +95253,19 @@ ap_fixed<10, 3> IC_Angle_31(xf::cv::Window<37, 37, ap_uint<8>>& window){
     int umax[16] = {15, 15, 15, 15, 14, 14, 14, 13, 13, 12, 11, 10, 9, 8, 6, 3};
     m_01 = 0;
     m_10 = 0;
+
+#pragma HLS pipeline II=1
     for (int u = -15; u <= 15; ++u) {
+#pragma HLS unroll factor=5
         m_10 += u * window(15, 15 + u);
     }
-    for (int v = 1; v <= 15; ++v) {
+#pragma HLS pipeline
+    for (int v = 1; v <= 15; ++v)
+    {
+#pragma HLS unroll factor=5
         v_sum = 0;
         int d = umax[v];
+#pragma HLS pipeline
         for (int u = -d; u <= d; ++u) {
             val_plus = window(15+v, 15+u);
             val_minus = window(15-v, 15+u);
@@ -95282,7 +95289,10 @@ ap_uint<256> descriptor(xf::cv::Window<37, 37, ap_uint<8>>& window, ap_fixed<10,
     sine = hls::sin<10, 3>(angle);
 
     loop_descriptor:
+
+
     for (int i = 0; i < 256; i++) {
+#pragma HLS unroll factor=8
         x0 = bit_pattern_31[i*4];
         y0 = bit_pattern_31[i*4 + 1];
         x1 = bit_pattern_31[i*4 + 2];
@@ -95305,7 +95315,9 @@ void process_input(
     int height,
     int width
 ) {
+
     for (int i = 0; i < height*width; i++) {
+#pragma HLS unroll factor=8
         dst.write(src.read().data);
     }
 }
@@ -95315,7 +95327,10 @@ void process_stream2xfMat(
     hls::stream<ap_uint<W>>& src,
     xf::cv::Mat<TYPE, HEIGHT, WIDTH, NPC>& dst
 ) {
+
+
     for (int i = 0; i < dst.cols * dst.rows; i++) {
+#pragma HLS unroll factor=8
         dst.write(i, src.read());
     }
 }
@@ -95325,7 +95340,10 @@ void process_xfMat2stream(
     xf::cv::Mat<TYPE, HEIGHT, WIDTH, NPC>& src,
     hls::stream<ap_uint<W>>& dst
 ) {
+
+
     for (int i = 0; i < src.cols * src.rows; i++) {
+#pragma HLS unroll factor=8
         dst.write(src.read(i));
     }
 }
@@ -95372,9 +95390,14 @@ void process_blur(
     };
 
     loop_init_window_row:
+
+
     for (int i = 0; i < 7; i++) {
+#pragma HLS unroll factor=8
+
         loop_init_window_col:
         for (int j = 0; j < 7; j++) {
+#pragma HLS unroll factor=8
             window_buffer.insert_pixel(0, i, j);
             window.insert_pixel(0, i, j);
         }
@@ -95382,13 +95405,18 @@ void process_blur(
 
     loop_init_line:
     for (int j = 0 ; j < width; j++) {
+
+#pragma HLS unroll factor=8
         for (int i = 0; i < 7; i++) {
+#pragma HLS unroll factor=8
             line_buffer.val[i][j] = 0;
         }
     }
 
     loop_blur:
+#pragma HLS pipeline
     for (int cnt = 0; cnt < (height+4)*width; cnt++) {
+
         int i = cnt / width;
         int j = cnt % width;
         if (i < height) {
@@ -95403,8 +95431,11 @@ void process_blur(
         window_buffer.shift_pixels_left();
         window.shift_pixels_left();
         for (int k = 0; k < 7; k++) {
+#pragma HLS unroll factor=8
             window_buffer.insert_pixel(line_buffer(k, j), k, 6);
-            if (j == 3) {
+            if (j == 3)
+#pragma HLS LOOP_MERGE
+            {
                 for (int jj = 0; jj < 3; jj++) {
                     window.insert_pixel(0, k, jj);
                 }
@@ -95419,6 +95450,7 @@ void process_blur(
         }
         if (read_idx > 3*width + 3 && write_idx < width*height) {
             acc = 0;
+#pragma HLS pipeline
             for (int i = 0; i < 7; i++) {
                 for (int j = 0; j < 7; j++) {
                     acc += window(i, j)*kernel[i*7+j];
@@ -95452,6 +95484,7 @@ void process_rBRIEF(
 
     loop_row:
     for (int i = 0; i < height; i++) {
+#pragma HLS unroll
         loop_col:
         for (int j = 0; j < width; j++) {
             mask = mask_in.read();
@@ -95469,7 +95502,9 @@ void process_rBRIEF(
             blur_window.shift_pixels_left();
             mask_window.shift_pixels_left();
 
+
             for (int k = 0; k < 37; k++) {
+#pragma HLS unroll factor=8
                 img_window.insert_pixel(img_line(k, j), k, 37 -1);
                 blur_window.insert_pixel(blur_line(k, j), k, 37 -1);
                 mask_window.insert_pixel(mask_line(k, j), k, 37 -1);
@@ -95504,6 +95539,7 @@ void process_output(
         data = src.read();
         flag = data.valid;
         if (flag == 1) {
+
             dst_axi.data.range(16*2+8+256-1, 16+8+256) = data.x;
             dst_axi.data.range(16+8+256-1, 8+256) = data.y;
             dst_axi.data.range(8+256-1, 256) = data.response;
@@ -95592,7 +95628,9 @@ int ORB_accel(
 
     ap_axiu<16*2+8+256, 1, 1, 1> dst_axi;
     int cnt = 0;
+
     for (int val = 0; val < 256; val++) {
+#pragma HLS unroll
         for (int i = 0; i < cntTree[255-val]; i++) {
             if (cnt < nFeatures) {
                 dst_axi.data = idxTree[255-val][i];

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'process_nms_8_1080_1920_1_s'" level="0">
-<item name = "Date">Wed Jan 17 16:58:53 2024
+<item name = "Date">Sun Jan 21 17:47:01 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -86,7 +86,7 @@
 <column name="add_ln178_1_fu_337_p2">+, 0, 0, 18, 11, 1</column>
 <column name="add_ln178_fu_596_p2">+, 0, 0, 39, 32, 32</column>
 <column name="cnt_4_fu_375_p2">+, 0, 0, 39, 32, 1</column>
-<column name="i_7_fu_307_p2">+, 0, 0, 18, 11, 1</column>
+<column name="i_4_fu_307_p2">+, 0, 0, 18, 11, 1</column>
 <column name="k_1_fu_605_p2">+, 0, 0, 19, 12, 1</column>
 <column name="and_ln193_fu_427_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln194_1_fu_451_p2">and, 0, 0, 2, 1, 1</column>
@@ -176,7 +176,7 @@
 <column name="cnt_3_reg_258">32, 0, 32, 0</column>
 <column name="cnt_fu_96">32, 0, 32, 0</column>
 <column name="height_read_reg_659">11, 0, 11, 0</column>
-<column name="i_7_reg_688">11, 0, 11, 0</column>
+<column name="i_4_reg_688">11, 0, 11, 0</column>
 <column name="i_reg_236">11, 0, 11, 0</column>
 <column name="icmp_ln178_reg_712">1, 0, 1, 0</column>
 <column name="icmp_ln190_reg_728">1, 0, 1, 0</column>

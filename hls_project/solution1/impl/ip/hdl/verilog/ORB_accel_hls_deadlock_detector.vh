@@ -263,12 +263,12 @@
     wire token_clear;
     reg [10:0] origin;
 
-reg [15:0] trans_in_cnt_0;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0
+reg [15:0] trans_in_cnt_0;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_in_cnt_0 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.start_write == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.start_write == 1'b1) begin
         trans_in_cnt_0 <= trans_in_cnt_0 + 16'h1;
     end
     else begin
@@ -276,12 +276,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_0;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0
+reg [15:0] trans_out_cnt_0;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_out_cnt_0 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.ap_continue == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.ap_continue == 1'b1) begin
         trans_out_cnt_0 <= trans_out_cnt_0 + 16'h1;
     end
     else begin
@@ -289,12 +289,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_1;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
+reg [15:0] trans_in_cnt_1;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_in_cnt_1 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.start_write == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.start_write == 1'b1) begin
         trans_in_cnt_1 <= trans_in_cnt_1 + 16'h1;
     end
     else begin
@@ -302,12 +302,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_1;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
+reg [15:0] trans_out_cnt_1;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_out_cnt_1 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_continue == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_continue == 1'b1) begin
         trans_out_cnt_1 <= trans_out_cnt_1 + 16'h1;
     end
     else begin
@@ -315,12 +315,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_2;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0
+reg [15:0] trans_in_cnt_2;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_in_cnt_2 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.start_write == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.start_write == 1'b1) begin
         trans_in_cnt_2 <= trans_in_cnt_2 + 16'h1;
     end
     else begin
@@ -328,12 +328,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_2;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0
+reg [15:0] trans_out_cnt_2;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_out_cnt_2 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.ap_continue == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.ap_continue == 1'b1) begin
         trans_out_cnt_2 <= trans_out_cnt_2 + 16'h1;
     end
     else begin
@@ -341,12 +341,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_3;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0
+reg [15:0] trans_in_cnt_3;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_in_cnt_3 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.start_write == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.start_write == 1'b1) begin
         trans_in_cnt_3 <= trans_in_cnt_3 + 16'h1;
     end
     else begin
@@ -354,12 +354,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_3;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0
+reg [15:0] trans_out_cnt_3;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_out_cnt_3 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.ap_continue == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.ap_continue == 1'b1) begin
         trans_out_cnt_3 <= trans_out_cnt_3 + 16'h1;
     end
     else begin
@@ -367,12 +367,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_in_cnt_4;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0
+reg [15:0] trans_in_cnt_4;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_in_cnt_4 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.start_write == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.start_write == 1'b1) begin
         trans_in_cnt_4 <= trans_in_cnt_4 + 16'h1;
     end
     else begin
@@ -380,12 +380,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_4;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0
+reg [15:0] trans_out_cnt_4;// for process grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_out_cnt_4 <= 16'h0;
     end
-    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.ap_continue == 1'b1) begin
+    else if (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.ap_done == 1'b1 && grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.ap_continue == 1'b1) begin
         trans_out_cnt_4 <= trans_out_cnt_4 + 16'h1;
     end
     else begin
@@ -393,7 +393,7 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 0, 4, 4) ORB_accel_hls_deadlock_detect_unit_0 (
         .reset(reset),
         .clock(clock),
@@ -409,23 +409,23 @@ end
         .token_out_vec(token_out_vec_0),
         .dl_detect_out(dl_in_vec[0]));
 
-    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.width_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.height_new_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.width_new_out_blk_n);
+    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.width_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.height_new_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.width_new_out_blk_n);
     assign proc_0_data_PIPO_blk[0] = 1'b0;
-    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
     assign proc_0_input_sync_blk[0] = 1'b0;
     assign proc_0_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_0[0] = dl_detect_out ? proc_dep_vld_vec_0_reg[0] : (proc_0_data_FIFO_blk[0] | proc_0_data_PIPO_blk[0] | proc_0_start_FIFO_blk[0] | proc_0_TLF_FIFO_blk[0] | proc_0_input_sync_blk[0] | proc_0_output_sync_blk[0]);
-    assign proc_0_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.height_out1_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.width_out2_blk_n);
+    assign proc_0_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.height_out1_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.width_out2_blk_n);
     assign proc_0_data_PIPO_blk[1] = 1'b0;
-    assign proc_0_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_input_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_input_8_0_1080_1920_1_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_input_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_input_8_0_1080_1920_1_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[1] = 1'b0;
     assign proc_0_input_sync_blk[1] = 1'b0;
     assign proc_0_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_0[1] = dl_detect_out ? proc_dep_vld_vec_0_reg[1] : (proc_0_data_FIFO_blk[1] | proc_0_data_PIPO_blk[1] | proc_0_start_FIFO_blk[1] | proc_0_TLF_FIFO_blk[1] | proc_0_input_sync_blk[1] | proc_0_output_sync_blk[1]);
-    assign proc_0_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.threshold_out_blk_n);
+    assign proc_0_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.threshold_out_blk_n);
     assign proc_0_data_PIPO_blk[2] = 1'b0;
-    assign proc_0_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_fast_8_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_fast_8_1080_1920_1_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_fast_8_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_fast_8_1080_1920_1_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[2] = 1'b0;
     assign proc_0_input_sync_blk[2] = 1'b0;
     assign proc_0_output_sync_blk[2] = 1'b0;
@@ -434,7 +434,7 @@ end
     assign proc_0_data_PIPO_blk[3] = 1'b0;
     assign proc_0_start_FIFO_blk[3] = 1'b0;
     assign proc_0_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_0_input_sync_blk[3] = 1'b0 | (grp_process_ORB_8_0_1080_1920_1_s_fu_247.ap_sync_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_entry57_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.ap_sync_process_output_8_0_1080_1920_1_U0_ap_ready);
+    assign proc_0_input_sync_blk[3] = 1'b0 | (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.ap_sync_process_ORB_8_0_1080_1920_1_entry336_U0_ap_ready & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_entry336_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.ap_sync_process_output_8_0_1080_1920_1_U0_ap_ready);
     assign proc_0_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_0[3] = dl_detect_out ? proc_dep_vld_vec_0_reg[3] : (proc_0_data_FIFO_blk[3] | proc_0_data_PIPO_blk[3] | proc_0_start_FIFO_blk[3] | proc_0_TLF_FIFO_blk[3] | proc_0_input_sync_blk[3] | proc_0_output_sync_blk[3]);
     always @ (negedge reset or posedge clock) begin
@@ -470,7 +470,7 @@ end
     assign dep_chan_data_0_10 = out_chan_dep_data_0;
     assign token_0_10 = token_out_vec_0[3];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 1, 4, 4) ORB_accel_hls_deadlock_detect_unit_1 (
         .reset(reset),
         .clock(clock),
@@ -486,30 +486,30 @@ end
         .token_out_vec(token_out_vec_1),
         .dl_detect_out(dl_in_vec[1]));
 
-    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.width_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.height_new_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.width_new_blk_n);
+    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.width_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.height_new_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.width_new_blk_n);
     assign proc_1_data_PIPO_blk[0] = 1'b0;
-    assign proc_1_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_write);
+    assign proc_1_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_ORB_8_0_1080_1920_1_Block_split1_proc_U0_U.if_write);
     assign proc_1_TLF_FIFO_blk[0] = 1'b0;
     assign proc_1_input_sync_blk[0] = 1'b0;
     assign proc_1_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (proc_1_data_FIFO_blk[0] | proc_1_data_PIPO_blk[0] | proc_1_start_FIFO_blk[0] | proc_1_TLF_FIFO_blk[0] | proc_1_input_sync_blk[0] | proc_1_output_sync_blk[0]);
-    assign proc_1_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.img_mat_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.img_mat_cols_out_blk_n);
+    assign proc_1_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.img_mat_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.img_mat_cols_out_blk_n);
     assign proc_1_data_PIPO_blk[1] = 1'b0;
-    assign proc_1_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_read);
+    assign proc_1_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[1] = 1'b0;
     assign proc_1_input_sync_blk[1] = 1'b0;
     assign proc_1_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_1[1] = dl_detect_out ? proc_dep_vld_vec_1_reg[1] : (proc_1_data_FIFO_blk[1] | proc_1_data_PIPO_blk[1] | proc_1_start_FIFO_blk[1] | proc_1_TLF_FIFO_blk[1] | proc_1_input_sync_blk[1] | proc_1_output_sync_blk[1]);
-    assign proc_1_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.height_new_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.width_new_out_blk_n);
+    assign proc_1_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.height_new_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.width_new_out_blk_n);
     assign proc_1_data_PIPO_blk[2] = 1'b0;
-    assign proc_1_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_blur_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_blur_8_0_1080_1920_1_U0_U.if_read);
+    assign proc_1_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_blur_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_blur_8_0_1080_1920_1_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[2] = 1'b0;
     assign proc_1_input_sync_blk[2] = 1'b0;
     assign proc_1_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_1[2] = dl_detect_out ? proc_dep_vld_vec_1_reg[2] : (proc_1_data_FIFO_blk[2] | proc_1_data_PIPO_blk[2] | proc_1_start_FIFO_blk[2] | proc_1_TLF_FIFO_blk[2] | proc_1_input_sync_blk[2] | proc_1_output_sync_blk[2]);
-    assign proc_1_data_FIFO_blk[3] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.resized_mat_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.resized_mat_cols_out_blk_n);
+    assign proc_1_data_FIFO_blk[3] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.resized_mat_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.resized_mat_cols_out_blk_n);
     assign proc_1_data_PIPO_blk[3] = 1'b0;
-    assign proc_1_start_FIFO_blk[3] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_resize_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_resize_8_0_1080_1920_1_U0_U.if_read);
+    assign proc_1_start_FIFO_blk[3] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_resize_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_ORB_8_0_1080_1920_1_Block_split1_proc_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_resize_8_0_1080_1920_1_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[3] = 1'b0;
     assign proc_1_input_sync_blk[3] = 1'b0;
     assign proc_1_output_sync_blk[3] = 1'b0;
@@ -547,7 +547,7 @@ end
     assign dep_chan_data_1_4 = out_chan_dep_data_1;
     assign token_1_4 = token_out_vec_1[3];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_input_8_0_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_input_8_0_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 2, 2, 2) ORB_accel_hls_deadlock_detect_unit_2 (
         .reset(reset),
         .clock(clock),
@@ -563,16 +563,16 @@ end
         .token_out_vec(token_out_vec_2),
         .dl_detect_out(dl_in_vec[2]));
 
-    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_input_8_0_1080_1920_1_U0.dst_blk_n);
+    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_input_8_0_1080_1920_1_U0.dst_blk_n);
     assign proc_2_data_PIPO_blk[0] = 1'b0;
     assign proc_2_start_FIFO_blk[0] = 1'b0;
     assign proc_2_TLF_FIFO_blk[0] = 1'b0;
     assign proc_2_input_sync_blk[0] = 1'b0;
     assign proc_2_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_2[0] = dl_detect_out ? proc_dep_vld_vec_2_reg[0] : (proc_2_data_FIFO_blk[0] | proc_2_data_PIPO_blk[0] | proc_2_start_FIFO_blk[0] | proc_2_TLF_FIFO_blk[0] | proc_2_input_sync_blk[0] | proc_2_output_sync_blk[0]);
-    assign proc_2_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_input_8_0_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_input_8_0_1080_1920_1_U0.width_blk_n);
+    assign proc_2_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_input_8_0_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_input_8_0_1080_1920_1_U0.width_blk_n);
     assign proc_2_data_PIPO_blk[1] = 1'b0;
-    assign proc_2_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_input_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_input_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_input_8_0_1080_1920_1_U0_U.if_write);
+    assign proc_2_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_input_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_input_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_input_8_0_1080_1920_1_U0_U.if_write);
     assign proc_2_TLF_FIFO_blk[1] = 1'b0;
     assign proc_2_input_sync_blk[1] = 1'b0;
     assign proc_2_output_sync_blk[1] = 1'b0;
@@ -598,7 +598,7 @@ end
     assign dep_chan_data_2_0 = out_chan_dep_data_2;
     assign token_2_0 = token_out_vec_2[1];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 3, 3, 3) ORB_accel_hls_deadlock_detect_unit_3 (
         .reset(reset),
         .clock(clock),
@@ -614,23 +614,23 @@ end
         .token_out_vec(token_out_vec_3),
         .dl_detect_out(dl_in_vec[3]));
 
-    assign proc_3_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.img31_blk_n);
+    assign proc_3_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.img31_blk_n);
     assign proc_3_data_PIPO_blk[0] = 1'b0;
     assign proc_3_start_FIFO_blk[0] = 1'b0;
     assign proc_3_TLF_FIFO_blk[0] = 1'b0;
     assign proc_3_input_sync_blk[0] = 1'b0;
     assign proc_3_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_3[0] = dl_detect_out ? proc_dep_vld_vec_3_reg[0] : (proc_3_data_FIFO_blk[0] | proc_3_data_PIPO_blk[0] | proc_3_start_FIFO_blk[0] | proc_3_TLF_FIFO_blk[0] | proc_3_input_sync_blk[0] | proc_3_output_sync_blk[0]);
-    assign proc_3_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.img_mat_429_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.dst_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.dst_cols_out_blk_n);
+    assign proc_3_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.img_mat_429_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.dst_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.dst_cols_out_blk_n);
     assign proc_3_data_PIPO_blk[1] = 1'b0;
     assign proc_3_start_FIFO_blk[1] = 1'b0;
     assign proc_3_TLF_FIFO_blk[1] = 1'b0;
     assign proc_3_input_sync_blk[1] = 1'b0;
     assign proc_3_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_3[1] = dl_detect_out ? proc_dep_vld_vec_3_reg[1] : (proc_3_data_FIFO_blk[1] | proc_3_data_PIPO_blk[1] | proc_3_start_FIFO_blk[1] | proc_3_TLF_FIFO_blk[1] | proc_3_input_sync_blk[1] | proc_3_output_sync_blk[1]);
-    assign proc_3_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.dst_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.dst_cols_blk_n);
+    assign proc_3_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.dst_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.dst_cols_blk_n);
     assign proc_3_data_PIPO_blk[2] = 1'b0;
-    assign proc_3_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_stream2xfMat_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_write);
+    assign proc_3_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_stream2xfMat_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_stream2xfMat_8_0_1080_1920_1_U0_U.if_write);
     assign proc_3_TLF_FIFO_blk[2] = 1'b0;
     assign proc_3_input_sync_blk[2] = 1'b0;
     assign proc_3_output_sync_blk[2] = 1'b0;
@@ -662,7 +662,7 @@ end
     assign dep_chan_data_3_1 = out_chan_dep_data_3;
     assign token_3_1 = token_out_vec_3[2];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 4, 3, 3) ORB_accel_hls_deadlock_detect_unit_4 (
         .reset(reset),
         .clock(clock),
@@ -678,23 +678,23 @@ end
         .token_out_vec(token_out_vec_4),
         .dl_detect_out(dl_in_vec[4]));
 
-    assign proc_4_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.grp_resize_1_0_1080_1920_1080_1920_1_8_s_fu_80.grp_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_fu_48.img_mat_429_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.src_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.src_cols_blk_n);
+    assign proc_4_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.grp_resize_1_0_1080_1920_1080_1920_1_8_s_fu_80.grp_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_fu_48.img_mat_429_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.src_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.src_cols_blk_n);
     assign proc_4_data_PIPO_blk[0] = 1'b0;
     assign proc_4_start_FIFO_blk[0] = 1'b0;
     assign proc_4_TLF_FIFO_blk[0] = 1'b0;
     assign proc_4_input_sync_blk[0] = 1'b0;
     assign proc_4_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_4[0] = dl_detect_out ? proc_dep_vld_vec_4_reg[0] : (proc_4_data_FIFO_blk[0] | proc_4_data_PIPO_blk[0] | proc_4_start_FIFO_blk[0] | proc_4_TLF_FIFO_blk[0] | proc_4_input_sync_blk[0] | proc_4_output_sync_blk[0]);
-    assign proc_4_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.grp_resize_1_0_1080_1920_1080_1920_1_8_s_fu_80.grp_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_fu_48.resized_mat_430_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.dst_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.dst_cols_out_blk_n);
+    assign proc_4_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.grp_resize_1_0_1080_1920_1080_1920_1_8_s_fu_80.grp_resizeNNBilinear_0_1080_1920_1_1080_1920_1_8_s_fu_48.resized_mat_430_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.dst_rows_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.dst_cols_out_blk_n);
     assign proc_4_data_PIPO_blk[1] = 1'b0;
-    assign proc_4_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_read);
+    assign proc_4_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_read);
     assign proc_4_TLF_FIFO_blk[1] = 1'b0;
     assign proc_4_input_sync_blk[1] = 1'b0;
     assign proc_4_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_4[1] = dl_detect_out ? proc_dep_vld_vec_4_reg[1] : (proc_4_data_FIFO_blk[1] | proc_4_data_PIPO_blk[1] | proc_4_start_FIFO_blk[1] | proc_4_TLF_FIFO_blk[1] | proc_4_input_sync_blk[1] | proc_4_output_sync_blk[1]);
-    assign proc_4_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.dst_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.dst_cols_blk_n);
+    assign proc_4_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.dst_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.dst_cols_blk_n);
     assign proc_4_data_PIPO_blk[2] = 1'b0;
-    assign proc_4_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_resize_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_resize_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_resize_8_0_1080_1920_1_U0_U.if_write);
+    assign proc_4_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_resize_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_resize_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_resize_8_0_1080_1920_1_U0_U.if_write);
     assign proc_4_TLF_FIFO_blk[2] = 1'b0;
     assign proc_4_input_sync_blk[2] = 1'b0;
     assign proc_4_output_sync_blk[2] = 1'b0;
@@ -726,7 +726,7 @@ end
     assign dep_chan_data_4_1 = out_chan_dep_data_4;
     assign token_4_1 = token_out_vec_4[2];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_xfMat2stream_8_0_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_xfMat2stream_8_0_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 5, 2, 2) ORB_accel_hls_deadlock_detect_unit_5 (
         .reset(reset),
         .clock(clock),
@@ -742,14 +742,14 @@ end
         .token_out_vec(token_out_vec_5),
         .dl_detect_out(dl_in_vec[5]));
 
-    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_xfMat2stream_8_0_1080_1920_1_U0.resized_mat_430_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_xfMat2stream_8_0_1080_1920_1_U0.src_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_xfMat2stream_8_0_1080_1920_1_U0.src_cols_blk_n);
+    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_xfMat2stream_8_0_1080_1920_1_U0.resized_mat_430_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_xfMat2stream_8_0_1080_1920_1_U0.src_rows_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_xfMat2stream_8_0_1080_1920_1_U0.src_cols_blk_n);
     assign proc_5_data_PIPO_blk[0] = 1'b0;
-    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_xfMat2stream_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_write);
+    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_xfMat2stream_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_xfMat2stream_8_0_1080_1920_1_U0_U.if_write);
     assign proc_5_TLF_FIFO_blk[0] = 1'b0;
     assign proc_5_input_sync_blk[0] = 1'b0;
     assign proc_5_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_5[0] = dl_detect_out ? proc_dep_vld_vec_5_reg[0] : (proc_5_data_FIFO_blk[0] | proc_5_data_PIPO_blk[0] | proc_5_start_FIFO_blk[0] | proc_5_TLF_FIFO_blk[0] | proc_5_input_sync_blk[0] | proc_5_output_sync_blk[0]);
-    assign proc_5_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_xfMat2stream_8_0_1080_1920_1_U0.resized_img32_blk_n);
+    assign proc_5_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_xfMat2stream_8_0_1080_1920_1_U0.resized_img32_blk_n);
     assign proc_5_data_PIPO_blk[1] = 1'b0;
     assign proc_5_start_FIFO_blk[1] = 1'b0;
     assign proc_5_TLF_FIFO_blk[1] = 1'b0;
@@ -777,7 +777,7 @@ end
     assign dep_chan_data_5_6 = out_chan_dep_data_5;
     assign token_5_6 = token_out_vec_5[1];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 6, 3, 3) ORB_accel_hls_deadlock_detect_unit_6 (
         .reset(reset),
         .clock(clock),
@@ -793,23 +793,23 @@ end
         .token_out_vec(token_out_vec_6),
         .dl_detect_out(dl_in_vec[6]));
 
-    assign proc_6_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.img_in_blk_n);
+    assign proc_6_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.img_in_blk_n);
     assign proc_6_data_PIPO_blk[0] = 1'b0;
     assign proc_6_start_FIFO_blk[0] = 1'b0;
     assign proc_6_TLF_FIFO_blk[0] = 1'b0;
     assign proc_6_input_sync_blk[0] = 1'b0;
     assign proc_6_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_6[0] = dl_detect_out ? proc_dep_vld_vec_6_reg[0] : (proc_6_data_FIFO_blk[0] | proc_6_data_PIPO_blk[0] | proc_6_start_FIFO_blk[0] | proc_6_TLF_FIFO_blk[0] | proc_6_input_sync_blk[0] | proc_6_output_sync_blk[0]);
-    assign proc_6_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.img_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.blur_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.width_out_blk_n);
+    assign proc_6_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.img_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.blur_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.width_out_blk_n);
     assign proc_6_data_PIPO_blk[1] = 1'b0;
     assign proc_6_start_FIFO_blk[1] = 1'b0;
     assign proc_6_TLF_FIFO_blk[1] = 1'b0;
     assign proc_6_input_sync_blk[1] = 1'b0;
     assign proc_6_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_6[1] = dl_detect_out ? proc_dep_vld_vec_6_reg[1] : (proc_6_data_FIFO_blk[1] | proc_6_data_PIPO_blk[1] | proc_6_start_FIFO_blk[1] | proc_6_TLF_FIFO_blk[1] | proc_6_input_sync_blk[1] | proc_6_output_sync_blk[1]);
-    assign proc_6_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.width_blk_n);
+    assign proc_6_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.width_blk_n);
     assign proc_6_data_PIPO_blk[2] = 1'b0;
-    assign proc_6_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_blur_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_blur_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_blur_8_0_1080_1920_1_U0_U.if_write);
+    assign proc_6_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_blur_8_0_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_blur_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_blur_8_0_1080_1920_1_U0_U.if_write);
     assign proc_6_TLF_FIFO_blk[2] = 1'b0;
     assign proc_6_input_sync_blk[2] = 1'b0;
     assign proc_6_output_sync_blk[2] = 1'b0;
@@ -841,7 +841,7 @@ end
     assign dep_chan_data_6_1 = out_chan_dep_data_6;
     assign token_6_1 = token_out_vec_6[2];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 7, 3, 3) ORB_accel_hls_deadlock_detect_unit_7 (
         .reset(reset),
         .clock(clock),
@@ -857,23 +857,23 @@ end
         .token_out_vec(token_out_vec_7),
         .dl_detect_out(dl_in_vec[7]));
 
-    assign proc_7_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.img_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.blur_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.width_blk_n);
+    assign proc_7_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.img_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.blur_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.width_blk_n);
     assign proc_7_data_PIPO_blk[0] = 1'b0;
     assign proc_7_start_FIFO_blk[0] = 1'b0;
     assign proc_7_TLF_FIFO_blk[0] = 1'b0;
     assign proc_7_input_sync_blk[0] = 1'b0;
     assign proc_7_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_7[0] = dl_detect_out ? proc_dep_vld_vec_7_reg[0] : (proc_7_data_FIFO_blk[0] | proc_7_data_PIPO_blk[0] | proc_7_start_FIFO_blk[0] | proc_7_TLF_FIFO_blk[0] | proc_7_input_sync_blk[0] | proc_7_output_sync_blk[0]);
-    assign proc_7_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.img_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.blur_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.mask_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.width_out_blk_n);
+    assign proc_7_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.img_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.blur_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.mask_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.width_out_blk_n);
     assign proc_7_data_PIPO_blk[1] = 1'b0;
-    assign proc_7_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_nms_8_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_nms_8_1080_1920_1_U0_U.if_read);
+    assign proc_7_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_nms_8_1080_1920_1_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_nms_8_1080_1920_1_U0_U.if_read);
     assign proc_7_TLF_FIFO_blk[1] = 1'b0;
     assign proc_7_input_sync_blk[1] = 1'b0;
     assign proc_7_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_7[1] = dl_detect_out ? proc_dep_vld_vec_7_reg[1] : (proc_7_data_FIFO_blk[1] | proc_7_data_PIPO_blk[1] | proc_7_start_FIFO_blk[1] | proc_7_TLF_FIFO_blk[1] | proc_7_input_sync_blk[1] | proc_7_output_sync_blk[1]);
-    assign proc_7_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.p_threshold_blk_n);
+    assign proc_7_data_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.p_threshold_blk_n);
     assign proc_7_data_PIPO_blk[2] = 1'b0;
-    assign proc_7_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_fast_8_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_fast_8_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_fast_8_1080_1920_1_U0_U.if_write);
+    assign proc_7_start_FIFO_blk[2] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_fast_8_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_fast_8_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_fast_8_1080_1920_1_U0_U.if_write);
     assign proc_7_TLF_FIFO_blk[2] = 1'b0;
     assign proc_7_input_sync_blk[2] = 1'b0;
     assign proc_7_output_sync_blk[2] = 1'b0;
@@ -905,7 +905,7 @@ end
     assign dep_chan_data_7_0 = out_chan_dep_data_7;
     assign token_7_0 = token_out_vec_7[2];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 8, 2, 2) ORB_accel_hls_deadlock_detect_unit_8 (
         .reset(reset),
         .clock(clock),
@@ -921,16 +921,16 @@ end
         .token_out_vec(token_out_vec_8),
         .dl_detect_out(dl_in_vec[8]));
 
-    assign proc_8_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.img_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.blur_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.mask_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.width_blk_n);
+    assign proc_8_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.img_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.blur_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.mask_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.width_blk_n);
     assign proc_8_data_PIPO_blk[0] = 1'b0;
-    assign proc_8_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_nms_8_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_nms_8_1080_1920_1_U0_U.if_write);
+    assign proc_8_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_nms_8_1080_1920_1_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_nms_8_1080_1920_1_U0_U.if_write);
     assign proc_8_TLF_FIFO_blk[0] = 1'b0;
     assign proc_8_input_sync_blk[0] = 1'b0;
     assign proc_8_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_8[0] = dl_detect_out ? proc_dep_vld_vec_8_reg[0] : (proc_8_data_FIFO_blk[0] | proc_8_data_PIPO_blk[0] | proc_8_start_FIFO_blk[0] | proc_8_TLF_FIFO_blk[0] | proc_8_input_sync_blk[0] | proc_8_output_sync_blk[0]);
-    assign proc_8_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.img_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.blur_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.mask_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.width_out_blk_n);
+    assign proc_8_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.img_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.blur_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.mask_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.height_out_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.width_out_blk_n);
     assign proc_8_data_PIPO_blk[1] = 1'b0;
-    assign proc_8_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_rBRIEF_8_1080_1920_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_nms_8_1080_1920_1_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_rBRIEF_8_1080_1920_U0_U.if_read);
+    assign proc_8_start_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_rBRIEF_8_1080_1920_U0_U.if_full_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.ap_start & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_nms_8_1080_1920_1_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_rBRIEF_8_1080_1920_U0_U.if_read);
     assign proc_8_TLF_FIFO_blk[1] = 1'b0;
     assign proc_8_input_sync_blk[1] = 1'b0;
     assign proc_8_output_sync_blk[1] = 1'b0;
@@ -956,7 +956,7 @@ end
     assign dep_chan_data_8_9 = out_chan_dep_data_8;
     assign token_8_9 = token_out_vec_8[1];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 9, 2, 2) ORB_accel_hls_deadlock_detect_unit_9 (
         .reset(reset),
         .clock(clock),
@@ -972,14 +972,14 @@ end
         .token_out_vec(token_out_vec_9),
         .dl_detect_out(dl_in_vec[9]));
 
-    assign proc_9_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.img_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.img_blur_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.mask_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.width_blk_n);
+    assign proc_9_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.img_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.img_blur_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.mask_in_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.height_blk_n) | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.width_blk_n);
     assign proc_9_data_PIPO_blk[0] = 1'b0;
-    assign proc_9_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_rBRIEF_8_1080_1920_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.start_for_process_rBRIEF_8_1080_1920_U0_U.if_write);
+    assign proc_9_start_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_rBRIEF_8_1080_1920_U0_U.if_empty_n & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.start_for_process_rBRIEF_8_1080_1920_U0_U.if_write);
     assign proc_9_TLF_FIFO_blk[0] = 1'b0;
     assign proc_9_input_sync_blk[0] = 1'b0;
     assign proc_9_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_9[0] = dl_detect_out ? proc_dep_vld_vec_9_reg[0] : (proc_9_data_FIFO_blk[0] | proc_9_data_PIPO_blk[0] | proc_9_start_FIFO_blk[0] | proc_9_TLF_FIFO_blk[0] | proc_9_input_sync_blk[0] | proc_9_output_sync_blk[0]);
-    assign proc_9_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_rBRIEF_8_1080_1920_U0.desc_out_blk_n);
+    assign proc_9_data_FIFO_blk[1] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_rBRIEF_8_1080_1920_U0.desc_out_blk_n);
     assign proc_9_data_PIPO_blk[1] = 1'b0;
     assign proc_9_start_FIFO_blk[1] = 1'b0;
     assign proc_9_TLF_FIFO_blk[1] = 1'b0;
@@ -1007,7 +1007,7 @@ end
     assign dep_chan_data_9_10 = out_chan_dep_data_9;
     assign token_9_10 = token_out_vec_9[1];
 
-    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_output_8_0_1080_1920_1_U0
+    // Process: grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_output_8_0_1080_1920_1_U0
     ORB_accel_hls_deadlock_detect_unit #(11, 10, 2, 2) ORB_accel_hls_deadlock_detect_unit_10 (
         .reset(reset),
         .clock(clock),
@@ -1023,7 +1023,7 @@ end
         .token_out_vec(token_out_vec_10),
         .dl_detect_out(dl_in_vec[10]));
 
-    assign proc_10_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_output_8_0_1080_1920_1_U0.src_blk_n);
+    assign proc_10_data_FIFO_blk[0] = 1'b0 | (~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_output_8_0_1080_1920_1_U0.src_blk_n);
     assign proc_10_data_PIPO_blk[0] = 1'b0;
     assign proc_10_start_FIFO_blk[0] = 1'b0;
     assign proc_10_TLF_FIFO_blk[0] = 1'b0;
@@ -1034,7 +1034,7 @@ end
     assign proc_10_data_PIPO_blk[1] = 1'b0;
     assign proc_10_start_FIFO_blk[1] = 1'b0;
     assign proc_10_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_10_input_sync_blk[1] = 1'b0 | (grp_process_ORB_8_0_1080_1920_1_s_fu_247.ap_sync_process_output_8_0_1080_1920_1_U0_ap_ready & grp_process_ORB_8_0_1080_1920_1_s_fu_247.process_output_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_247.ap_sync_process_ORB_8_0_1080_1920_1_entry57_U0_ap_ready);
+    assign proc_10_input_sync_blk[1] = 1'b0 | (grp_process_ORB_8_0_1080_1920_1_s_fu_8070.ap_sync_process_output_8_0_1080_1920_1_U0_ap_ready & grp_process_ORB_8_0_1080_1920_1_s_fu_8070.process_output_8_0_1080_1920_1_U0.ap_idle & ~grp_process_ORB_8_0_1080_1920_1_s_fu_8070.ap_sync_process_ORB_8_0_1080_1920_1_entry336_U0_ap_ready);
     assign proc_10_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_10[1] = dl_detect_out ? proc_dep_vld_vec_10_reg[1] : (proc_10_data_FIFO_blk[1] | proc_10_data_PIPO_blk[1] | proc_10_start_FIFO_blk[1] | proc_10_TLF_FIFO_blk[1] | proc_10_input_sync_blk[1] | proc_10_output_sync_blk[1]);
     always @ (negedge reset or posedge clock) begin

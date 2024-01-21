@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'process_blur_8_0_1080_1920_1_s'" level="0">
-<item name = "Date">Wed Jan 17 16:57:44 2024
+<item name = "Date">Sun Jan 21 17:42:21 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">hls_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.029 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.093 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -35,9 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_init_window_row_loop_init_window_col">49, 49, 1, 1, 1, 49, yes</column>
-<column name="- loop_init_line_VITIS_LOOP_141_1">?, ?, 1, 1, 1, ?, yes</column>
-<column name="- loop_blur">?, ?, 31, 1, 1, ?, yes</column>
+<column name="- loop_init_line">?, ?, 8, 8, 1, ?, yes</column>
+<column name="- VITIS_LOOP_174_2">?, ?, 31, 1, 1, ?, yes</column>
 </table>
 </item>
 </section>

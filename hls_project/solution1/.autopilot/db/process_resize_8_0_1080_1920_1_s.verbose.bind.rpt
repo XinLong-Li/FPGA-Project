@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'process_resize_8_0_1080_1920_1_s'
 ================================================================
-* Date:           Wed Jan 17 16:57:41 2024
+* Date:           Sun Jan 21 17:42:17 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        hls_project
@@ -81,26 +81,26 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.67>
-ST_1 : Operation 3 [1/1] (1.83ns)   --->   "%dst_rows_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %dst_rows" [src/ORB.cpp:94]   --->   Operation 3 'read' 'dst_rows_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 3> <FIFO>
-ST_1 : Operation 4 [1/1] (1.83ns)   --->   "%dst_cols_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %dst_cols" [src/ORB.cpp:94]   --->   Operation 4 'read' 'dst_cols_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 3> <FIFO>
-ST_1 : Operation 5 [1/1] (1.83ns)   --->   "%write_ln94 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %dst_rows_out, i11 %dst_rows_read" [src/ORB.cpp:94]   --->   Operation 5 'write' 'write_ln94' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
-ST_1 : Operation 6 [1/1] (1.83ns)   --->   "%write_ln94 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %dst_cols_out, i11 %dst_cols_read" [src/ORB.cpp:94]   --->   Operation 6 'write' 'write_ln94' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
-ST_1 : Operation 7 [1/1] (1.83ns)   --->   "%src_rows_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %src_rows" [src/ORB.cpp:94]   --->   Operation 7 'read' 'src_rows_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
-ST_1 : Operation 8 [1/1] (1.83ns)   --->   "%src_cols_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %src_cols" [src/ORB.cpp:94]   --->   Operation 8 'read' 'src_cols_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
-ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln94 = call void @resize<1, 0, 1080, 1920, 1080, 1920, 1, 8>, i8 %img_mat_429, i8 %resized_mat_430, i11 %src_rows_read, i11 %src_cols_read, i11 %dst_rows_read, i11 %dst_cols_read" [src/ORB.cpp:94]   --->   Operation 9 'call' 'call_ln94' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 3 [1/1] (1.83ns)   --->   "%dst_rows_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %dst_rows" [src/ORB.cpp:112]   --->   Operation 3 'read' 'dst_rows_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 3> <FIFO>
+ST_1 : Operation 4 [1/1] (1.83ns)   --->   "%dst_cols_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %dst_cols" [src/ORB.cpp:112]   --->   Operation 4 'read' 'dst_cols_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 3> <FIFO>
+ST_1 : Operation 5 [1/1] (1.83ns)   --->   "%write_ln112 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %dst_rows_out, i11 %dst_rows_read" [src/ORB.cpp:112]   --->   Operation 5 'write' 'write_ln112' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 6 [1/1] (1.83ns)   --->   "%write_ln112 = write void @_ssdm_op_Write.ap_fifo.i11P0A, i11 %dst_cols_out, i11 %dst_cols_read" [src/ORB.cpp:112]   --->   Operation 6 'write' 'write_ln112' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [1/1] (1.83ns)   --->   "%src_rows_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %src_rows" [src/ORB.cpp:112]   --->   Operation 7 'read' 'src_rows_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (1.83ns)   --->   "%src_cols_read = read i11 @_ssdm_op_Read.ap_fifo.i11P0A, i11 %src_cols" [src/ORB.cpp:112]   --->   Operation 8 'read' 'src_cols_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln112 = call void @resize<1, 0, 1080, 1920, 1080, 1920, 1, 8>, i8 %img_mat_429, i8 %resized_mat_430, i11 %src_rows_read, i11 %src_cols_read, i11 %dst_rows_read, i11 %dst_cols_read" [src/ORB.cpp:112]   --->   Operation 9 'call' 'call_ln112' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_mat_429, void @empty_28, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %resized_mat_430, void @empty_28, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_mat_429, void @empty_1, i32 0, i32 0, void @empty_24, i32 0, i32 0, void @empty_24, void @empty_24, void @empty_24, i32 0, i32 0, i32 0, i32 0, void @empty_24, void @empty_24"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %resized_mat_430, void @empty_1, i32 0, i32 0, void @empty_24, i32 0, i32 0, void @empty_24, void @empty_24, void @empty_24, i32 0, i32 0, i32 0, i32 0, void @empty_24, void @empty_24"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %dst_cols, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %dst_rows, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %src_rows, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %src_cols, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %dst_rows_out, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i11 %dst_cols_out, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %resized_mat_430, void @empty_28, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_mat_429, void @empty_28, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln94 = call void @resize<1, 0, 1080, 1920, 1080, 1920, 1, 8>, i8 %img_mat_429, i8 %resized_mat_430, i11 %src_rows_read, i11 %src_cols_read, i11 %dst_rows_read, i11 %dst_cols_read" [src/ORB.cpp:94]   --->   Operation 20 'call' 'call_ln94' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %resized_mat_430, void @empty_1, i32 0, i32 0, void @empty_24, i32 0, i32 0, void @empty_24, void @empty_24, void @empty_24, i32 0, i32 0, i32 0, i32 0, void @empty_24, void @empty_24"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %img_mat_429, void @empty_1, i32 0, i32 0, void @empty_24, i32 0, i32 0, void @empty_24, void @empty_24, void @empty_24, i32 0, i32 0, i32 0, i32 0, void @empty_24, void @empty_24"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln112 = call void @resize<1, 0, 1080, 1920, 1080, 1920, 1, 8>, i8 %img_mat_429, i8 %resized_mat_430, i11 %src_rows_read, i11 %src_cols_read, i11 %dst_rows_read, i11 %dst_cols_read" [src/ORB.cpp:112]   --->   Operation 20 'call' 'call_ln112' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 21 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 
@@ -131,8 +131,8 @@ Port [ dst_cols_out]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=
 <method=bitvector/>
 dst_rows_read     (read         ) [ 001]
 dst_cols_read     (read         ) [ 001]
-write_ln94        (write        ) [ 000]
-write_ln94        (write        ) [ 000]
+write_ln112       (write        ) [ 000]
+write_ln112       (write        ) [ 000]
 src_rows_read     (read         ) [ 001]
 src_cols_read     (read         ) [ 001]
 specinterface_ln0 (specinterface) [ 000]
@@ -145,7 +145,7 @@ specinterface_ln0 (specinterface) [ 000]
 specinterface_ln0 (specinterface) [ 000]
 specinterface_ln0 (specinterface) [ 000]
 specinterface_ln0 (specinterface) [ 000]
-call_ln94         (call         ) [ 000]
+call_ln112        (call         ) [ 000]
 ret_ln0           (ret          ) [ 000]
 </LifeTime>
 
@@ -265,7 +265,7 @@ ret_ln0           (ret          ) [ 000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
@@ -283,7 +283,7 @@ ret_ln0           (ret          ) [ 000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </bind>
 </comp>
 
@@ -356,7 +356,7 @@ ret_ln0           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="52" class="1004" name="write_ln94_write_fu_52">
+<comp id="52" class="1004" name="write_ln112_write_fu_52">
 <pin_list>
 <pin id="53" dir="0" index="0" bw="0" slack="0"/>
 <pin id="54" dir="0" index="1" bw="11" slack="0"/>
@@ -365,11 +365,11 @@ ret_ln0           (ret          ) [ 000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln94/1 "/>
+<opset="write_ln112/1 "/>
 </bind>
 </comp>
 
-<comp id="60" class="1004" name="write_ln94_write_fu_60">
+<comp id="60" class="1004" name="write_ln112_write_fu_60">
 <pin_list>
 <pin id="61" dir="0" index="0" bw="0" slack="0"/>
 <pin id="62" dir="0" index="1" bw="11" slack="0"/>
@@ -378,7 +378,7 @@ ret_ln0           (ret          ) [ 000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln94/1 "/>
+<opset="write_ln112/1 "/>
 </bind>
 </comp>
 
@@ -419,7 +419,7 @@ ret_ln0           (ret          ) [ 000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln94/1 "/>
+<opset="call_ln112/1 "/>
 </bind>
 </comp>
 
@@ -560,8 +560,8 @@ ret_ln0           (ret          ) [ 000]
 |          |            src_rows_read_read_fu_68            |    0    |    0    |    0    |    0    |    0    |
 |          |            src_cols_read_read_fu_74            |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|   write  |             write_ln94_write_fu_52             |    0    |    0    |    0    |    0    |    0    |
-|          |             write_ln94_write_fu_60             |    0    |    0    |    0    |    0    |    0    |
+|   write  |             write_ln112_write_fu_52            |    0    |    0    |    0    |    0    |    0    |
+|          |             write_ln112_write_fu_60            |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
 |   Total  |                                                |    3    |    6    |  14.84  |   2432  |   2495  |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
